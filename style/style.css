@@ -1,0 +1,14 @@
+* {
+    color: white;
+background-color: #732673;
+font-family: consolas;
+}
+p {
+text-align: center;
+}
+.navbut {
+text-align: center;
+}
+a:hover {
+  text-shadow: 2px 2px 5px red;
+}
