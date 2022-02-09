@@ -1,2 +1,2 @@
-this is a website click the link to visit.
+This is a personal website of Nazm Us Saqib. 
 [twisthead.github.io](https://twisthead.github.io/ 'Visit Site')
