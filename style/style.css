@@ -1,7 +1,7 @@
 * {
     color: white;
 background-color: #732673;
-font-family: consolas;
+font-family: 'Space Mono', monospace;
 }
 p {
 text-align: center;
@@ -9,12 +9,15 @@ text-align: center;
 .navbut {
 text-align: center;
 }
+.navbut a {
+  padding: 10px 2px;
+}
 a:hover {
   text-shadow: 2px 2px 5px red;
 }
 .box {
   height: 200px;
-  width: 400px;
+  width: 450px;
 
   position: fixed;
   top: 50%;
@@ -25,4 +28,23 @@ border:2px;
 }
 .intro {
   padding-top: 70px;
+}
+#centerpara {
+  padding-left: 24%;
+  padding-right: 24%;
+}
+
+.topnav {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+ 
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 2px;
+  
+  
 }
