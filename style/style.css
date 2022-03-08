@@ -16,8 +16,9 @@ text-align: center;
 }
 .name {
   font-family: beast-face, serif;
-  font-size: 90px;
+  font-size: 9vw;
   margin: 20px;
+line-height: 1;
 }
 .navbut {
 text-align: center;
