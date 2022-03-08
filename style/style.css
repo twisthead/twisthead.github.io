@@ -1,10 +1,23 @@
-* {
-    color: white;
-background-color: #732673;
-font-family: 'Space Mono', monospace;
+@font-face {
+  font-family: 'beast-face';
+  src: url('fonts/beast-head.woff2') format('woff2'),
+       url('fonts/beast-head.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+* {background-color: #194350;
+    color: #FFC2B4;
+font-family: 'Space Mono', monospace;}
+a:hover {text-shadow: 2px 2px 8px #9DBEB9;}
+a, a > p {color: #FF8882;}
 p {
 text-align: center;
+}
+.name {
+  font-family: beast-face, serif;
+  font-size: 90px;
+  margin: 20px;
 }
 .navbut {
 text-align: center;
@@ -12,22 +25,20 @@ text-align: center;
 .navbut a {
   padding: 10px 2px;
 }
-a:hover {
-  text-shadow: 2px 2px 5px red;
-}
+
 .box {
-  height: 200px;
-  width: 450px;
+  height: 100px;
+  width: 600px;
 
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 45%;
   margin-top: -100px;
   margin-left: -200px;
 border:2px;
 }
 .intro {
-  padding-top: 70px;
+  padding-top: 20px;
 }
 #centerpara {
   padding-left: 24%;
@@ -41,8 +52,7 @@ border:2px;
 
 /* Style the links inside the navigation bar */
 .topnav a {
- 
-  color: #f2f2f2;
+
   text-align: center;
   padding: 10px 2px;
   
