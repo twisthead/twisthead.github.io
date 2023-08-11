@@ -7,7 +7,7 @@
     <link href="/assets/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="intro">
+    <div class="intro1">
       <p class="name">Najm Us Saqib</p>
       <p>Hi! You've reached the personal website of Najm Us Saqib.</p>
       <p>This is my personal website. I will write something about me and stuff that I do.</p>
@@ -17,20 +17,19 @@
 <br>
 <br>
 <div class="navbut">
-[<a href="/pages/bio.html">Bio</a>]
-[<a href="/contact/">Contact Me</a>]
- [<a href="/news">News</a>]
- [<a href="/books">Books</a>]
- [<a href="/pages/projects.html">Projects</a>]
+[<a href="{% link pages/bio.md %}">Bio</a>]
+ [<a href="{% link pages/blogs.md %}">News</a>]
+ [<a href="{% link pages/books.md %}">Books</a>]
+ [<a href="{% link pages/projects.md %}">Projects</a>]
+ [<a href="{% link pages/contact.md %}">Contact Me</a>]
 
  <br>
 
- <p>My Blogs : <a href="https://crapauthor.wordpress.com">Blog</a> | 
- <a href="https://lifeisalovepoem.blogspot.com/">Poetry</a></p>
+ <p>My Blogs : [<a href="https://crapauthor.wordpress.com">Blog</a>] | 
+ [<a href="https://lifeisalovepoem.blogspot.com/">Poetry</a>]</p>
  
  
- 
-
+ {{ content }}
  <br>
 <span style="font-size:30px">&#9733;&#9733;&#9733;</span>
 </div>
