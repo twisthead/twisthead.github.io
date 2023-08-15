@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Little Introduction
 permalink: /bio
 ---
 <h1 style="text-align:center;">Bio</h1>

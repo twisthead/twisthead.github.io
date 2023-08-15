@@ -22,9 +22,7 @@ line-height: 1;
 .navbut {
 text-align: center;
 }
-.navbut a {
-  padding: 10px 2px;
-}
+
 
 .box {
   height: 100px;
@@ -44,9 +42,26 @@ padding-top: 20;
   text-align: center;
 
 }
+
+/* Default padding for large screens */
 #centerpara {
-  padding: calc(8px + 1.5625vw) calc(8px + 23.5625vw);
+    padding: 3% 25%;
 }
+
+/* For tablets or medium-sized screens */
+@media (max-width: 992px) {
+    #centerpara {
+        padding: 30px;
+    }
+}
+
+/* For mobile or small screens */
+@media (max-width: 768px) {
+    #centerpara {
+        padding: 10px;
+    }
+}
+
 
 .topnav {
   overflow: hidden;
