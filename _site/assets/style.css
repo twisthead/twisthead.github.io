@@ -6,10 +6,16 @@
   font-style: normal;
 }
 
-* {background-color: #194350;
+* {
+    background-color: #194350;
     color: #FFC2B4;
-font-family: 'Space Mono', monospace;}
-a:hover {text-shadow: 2px 2px 8px #9DBEB9;}
+    font-family: 'Space Mono', monospace;
+}
+
+a:hover {
+  text-shadow: 2px 2px 8px #9DBEB9;
+}
+
 a, a > p {color: #FF8882;}
 
 
@@ -23,18 +29,6 @@ line-height: 1;
 text-align: center;
 }
 
-
-.box {
-  height: 100px;
-  width: 600px;
-
-  position: fixed;
-  top: 25%;
-  left: 45%;
-  margin-top: -100px;
-  margin-left: -200px;
-border:2px;
-}
 .intro {
 padding-top: 20;
 }
@@ -45,7 +39,7 @@ padding-top: 20;
 
 /* Default padding for large screens */
 #centerpara {
-    padding: 3% 25%;
+    padding: 1% 25%;
 }
 
 /* For tablets or medium-sized screens */
@@ -66,11 +60,11 @@ padding-top: 20;
 .topnav {
   overflow: hidden;
   text-align: center;
+  padding-top: 10px;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-
   text-align: center;
   /*padding: 10px 20px;*/
 }

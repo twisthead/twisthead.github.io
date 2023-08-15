@@ -1,12 +1,13 @@
 ---
 layout: bloglist
-title: Blogs
-permalink: /news
+title: Writeups & Blogs
+permalink: /writeups
 ---
 # Blogs
+_Here I will post some of my writeups, blogs and news regarding this site and my other projects. Hope you enjoy._
 <div class="postlist">
   {% for post in site.posts %}
    
-   <a style="text-decoration: none;" href="{{ post.url }}"><h3>- {{ post.title }} </h3></a>
+  {{ post.date | date: "%-d %b %Y" }}<br> <a href="{{ post.url }}"><p class="list">- {{ post.title }} </p></a>
   {% endfor %}
 </div>
