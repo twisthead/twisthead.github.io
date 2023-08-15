@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Books and Readings
 permalink: /books
 ---
 <h1 style="text-align: center;">Books</h1>
