@@ -17,6 +17,8 @@ In this section I will list what books I am reading or have read earlier and boo
 
 **//Books I have read//**
 
-Will be updated soon... \_/\\\_
+[**Complete List**]({% link pages/books-read.html %})  
 
-Meanwhile you can see my [GoodReads profile](https://www.goodreads.com/user/show/100734663-nazm-us-saqib) for full list.
+---
+
+You can see my [GoodReads profile](https://www.goodreads.com/user/show/100734663-nazm-us-saqib).
