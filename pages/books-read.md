@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Books Read</title>
-  <style type="text/css">
-    * {
-       background-color: #194350;
-    color: #FFC2B4;
-    font-family: 'Space Mono', monospace;
-    }
-   
-  </style>
-</head>
-<body>
-<div style="margin: 30px;">
+---
+layout: default
+title: Books Read
+---
+<div style="margin: 30px; text-align: center;">
    <h2>List of Books I have read</h2>
-    <a href="{% link books.md %}">Back</a>
- 
+   
+    <a href="{% link pages/books.md %}" style="text-decoration: none">
+                <span style="background-color: crimson; padding: 9px; color: floralwhite; border-radius: 8px">Back
+                </span>
+                </a>
+
+     
 </div>
 
 
@@ -431,5 +424,3 @@
 </table>
 
 </div>
-</body>
-</html>
