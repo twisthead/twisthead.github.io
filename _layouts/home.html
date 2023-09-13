@@ -22,14 +22,19 @@
 
  <br>
 
- <p>My Blogs : [<a href="https://crapauthor.wordpress.com" target="_blank">Blog</a>] | 
+ <p>My Blogs : [<a href="https://crapauthor.wordpress.com" target="_blank">Blog</a>] |
  [<a href="https://lifeisalovepoem.blogspot.com/" target="_blank">Poetry</a>]</p>
- 
- 
- {{ content }}
+ <div class="pagelinks">
+   {% for page in site.pages %}
+     {% if page.path contains 'pages/content' %}
+      <span>[<a href="{{ page.url }}">{{ page.title }}</a>] </span>
+     {% endif %}
+   {% endfor %}
+ </div>
+ <br>
+ <span style="font-size:30px">&#9733;&#9733;&#9733;</span>
  <br>
 
-<span style="font-size:30px">&#9733;&#9733;&#9733;</span>
 
 </div>
 
