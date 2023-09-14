@@ -24,11 +24,11 @@ I want to have a career related to books, literature, reading, writing and all. 
     Sarvodaya Inter College, Deoria  
     UPMSP, Prayagraj  
 
-3. Graduation - 2021  
+3. BA (Hons) English - 2021  
     Aligarh Muslim University  
     Aligarh  
 
-4. Post-Graduation - 2023  
+4. MA English - 2023  
     Aligarh Muslim University  
     Aligarh  
 
