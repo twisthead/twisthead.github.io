@@ -1,4 +1,4 @@
 ---
 layout: home
-title: Nazm Us Saqib's Page
+title: Najm Us Saqib's Page
 ---
