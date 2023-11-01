@@ -6,7 +6,7 @@ permalink: /contact
 
 So, there are several ways you can ping me.
 
-You Can... [Telegram Me](https://t.me/saqibhssn) // [Mail Me](mailto:nsaqib@duck.com) // [Mastodon Me](https://mas.to/web/accounts/107768648774798764)
+You Can... [Telegram Me](https://t.me/saqibhssn) // [Mail Me](mailto:nsaqib@duck.com) // [Mastodon Me](https://mastodon.social/@twistedhead)
 
 BTW! Telegram is preferred and it's fast.
 
