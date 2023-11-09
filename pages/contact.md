@@ -3,6 +3,7 @@ layout: page
 title: Wanna get in touch?
 permalink: /contact
 ---
+<h1 style="text-align:center;">Contact</h1>
 
 So, there are several ways you can ping me.
 
