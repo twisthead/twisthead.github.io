@@ -77,3 +77,11 @@ padding-top: 20;
 .postlist a {
     text-decoration: none;
 }
+.rss-flex {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.rss-flex-img {
+  padding-top: 3px;
+}
