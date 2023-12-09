@@ -3,12 +3,17 @@ layout: default
 ---
       {% include navbar.html %}
 
-<div class="intro" id="centerpara">
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_long_string }} &bull; {{ page.author }}</p>
+<div id="centerpara">
+  <div class="post-flex">
+
+<div class="post-heading">{{ page.title }}</div>
+<p class="date">{{ page.date | date_to_long_string }} &bull; {{ page.author }}</p>
 <section>{{ content }}</section>
+
+
+  </div>
 <div class="post-rss-flex">
-  <h2>Comments</h2><span class="post-rss-right">{% include feed.html %}</span>
+  <h3>Comments</h3><span class="post-rss-right">{% include feed.html %}</span>
 </div>
 
 

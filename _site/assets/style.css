@@ -66,15 +66,39 @@ padding-top: 20;
 /* Style the links inside the navigation bar */
 .topnav a {
   text-align: center;
-  /*padding: 10px 20px;*/
+  text-decoration: none;
+}
+.topnav a:hover {
+  text-decoration: underline;
 }
 
 /* blog list in the blogs page */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.post-cards {
+  padding: 15px;
+  border-radius: 7px;
+}
+.post-cards, .post-cards a p, .post-date, .excerpt>p, #read-more  {
+  background-color: #EAEAEA !important;
+}
+.post-cards a, a>p {
+ color: #FF2E63 !important;
+}
+.post-cards>p{
+  color: #252A34 !important;
+}
+
+.excerpt>p {
+  color: #108d8b !important;
+}
 .post-heading {
-  margin: 10px 0px 0px 0px;
   font-weight: bold;
   font-size: 1.2em;
-
+  margin: 0;
 }
 .post-list a {
     text-decoration: none;
@@ -83,8 +107,11 @@ padding-top: 20;
   margin-top: 0;
   font-size: smaller;
 }
-.read-more-link>p {
+.excerpt p {
   margin-bottom: 3px;
+}
+#read-more:hover {
+  text-decoration: underline;
 }
 .separator {
   width: 50%;
@@ -93,6 +120,8 @@ padding-top: 20;
 .pagination {
 text-align: center;
 }
+/*---------------------*/
+
 
 .rss-flex {
   display: flex;
@@ -112,4 +141,13 @@ text-align: center;
 }
 .post-rss-flex>span {
   align-self: center;
+}
+.post-flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.date {
+  margin: 0;
+  font-size: smaller;
 }
