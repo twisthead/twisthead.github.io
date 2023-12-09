@@ -1,0 +1,53 @@
+---
+layout: blog
+title: Writeups & Blogs
+---
+<h1 style="text-align:center;">Blogs</h1>
+<i>Here I will post some of my writeups, blogs and news regarding this site and my other projects. Hope you enjoy.</i>
+
+
+<br>
+
+
+<div class="post-list">
+
+  {% for post in paginator.posts %}
+<p class="separator"></p>
+  <a href="{{ post.url }}"><p class="post-heading">{{ post.title }}</p></a>
+
+  <p class="post-date">{{ post.date | date: "%-d %b %Y" }} &bull; {{ post.author }}</p>
+
+<div class="read-more-link">
+
+  {{ post.excerpt }}
+  </div>
+  <a href="{{ post.url }}">Read More &#8594;</a>
+
+  {% endfor %}
+</div>
+<br>
+<br>
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+<p class="separator"></p>
+<hr>
+
+{% include feed.html %}
+
+<p class="separator"></p>

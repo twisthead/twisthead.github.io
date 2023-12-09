@@ -68,20 +68,48 @@ padding-top: 20;
   text-align: center;
   /*padding: 10px 20px;*/
 }
+
 /* blog list in the blogs page */
-.list {
-  margin: 7px 0px 15px 0px;
+.post-heading {
+  margin: 10px 0px 0px 0px;
   font-weight: bold;
   font-size: 1.2em;
+
 }
-.postlist a {
+.post-list a {
     text-decoration: none;
 }
+.post-date {
+  margin-top: 0;
+  font-size: smaller;
+}
+.read-more-link>p {
+  margin-bottom: 3px;
+}
+.separator {
+  width: 50%;
+  margin: 30px auto;
+}
+.pagination {
+text-align: center;
+}
+
 .rss-flex {
   display: flex;
   justify-content: center;
   gap: 5px;
+  margin:10px;
 }
 .rss-flex-img {
   padding-top: 3px;
+}
+.post-rss-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.post-rss-flex>h2 {
+  margin: 0;
+}
+.post-rss-flex>span {
+  align-self: center;
 }
