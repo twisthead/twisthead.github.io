@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+   <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easiest way to add pagination in Jekyll - Najm Us Saqib</title>
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Najm Us Saqib&apos;s Personal Website" />
+
+
+  </head>
+  <body>
+
+          <div class="topnav">
+  [<a href="/">Home</a>]
+  [<a href="/bio">Bio</a>]
+ [<a href="/blog/">Writeups</a>]
+  [<a href="/books">Books</a>]
+  [<a href="/projects">Projects</a>]
+  [<a href="/contact">Contact</a>]
+</div>
+
+
+<div id="centerpara">
+  <div class="post-flex">
+
+<div class="post-heading">Easiest way to add pagination in Jekyll</div>
+<p class="date">09 December 2023 &bull; Nazm Us Saqib</p>
+<section><p>Recently I was thinking of adding pagination to my site, and it turned out to be a nighmare. <!--more--> I had to google so many things and waste so much time. After spending considerable amount of time researching, I got it working finally.</p>
+
+<p>The pagination in Jekyll is difficult and it is incomprehensively documented on Jekyll Docs, which makes it pretty difficult to add pagination to the site. Here I am aiming to sum up numerous tutorials which helped me add pagination to my site.</p>
+
+<p>Follow along and do exactly what’s stated and you’ll have the pagination.</p>
+
+<p><strong>1. Install required gems</strong></p>
+
+<p>You need to install the plugin <code class="language-plaintext highlighter-rouge">"jekyll-pagination"</code>.</p>
+
+<p><strong>Edit “config.yml” &amp; “gemfile” file</strong></p>
+
+<p>Add the follwing lines in config.yml</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">plugins</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">jekyll-paginate</span>
+
+<span class="na">paginate</span><span class="pi">:</span> <span class="m">5</span>
+<span class="na">paginate-path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/blog/page:num/"</span></code></pre></figure>
+
+<p>It should look something like this</p>
+
+<blockquote>
+  <p><img src="/assets/ss-for-blog/plugin.png" alt="code" /></p>
+</blockquote>
+
+<p>Add the following line to “gemfile” located in the root directory.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># place it just below the line "group :jekyll_plugins do"</span>
+
+<span class="s">gem "jekyll-paginate"</span></code></pre></figure>
+
+<p>It should look something like this.</p>
+
+<blockquote>
+  <p><img src="/assets/ss-for-blog/gemfile.png" alt="gemfile" /></p>
+</blockquote>
+
+<ul>
+  <li>Open a terminal, navigate to your directory and run the command.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># run in terminal</span>
+
+bundle <span class="nb">install</span></code></pre></figure>
+
+<p>Now you are done with half of the work.</p>
+
+<p><strong>2. Making a page where you list your blogs.</strong></p>
+
+<ul>
+  <li>Make a folder called “blog” in project’s root directory.</li>
+  <li>Inside the folder make a file called “index.html”.</li>
+</ul>
+
+<p><strong>3. Put the below code to generate list of posts with pagination.</strong></p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+layout: default
+title: My Blog
+---
+
+&lt;!-- This loops through the paginated posts --&gt;
+<span class="cp">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">posts</span><span class="w"> </span><span class="cp">%}</span>
+  &lt;h1&gt;&lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="cp">}}</span>"&gt;<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="cp">}}</span>&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="author"&gt;
+    &lt;span class="date"&gt;<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="cp">}}</span>&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;div class="content"&gt;
+    <span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">content</span><span class="w"> </span><span class="cp">}}</span>
+  &lt;/div&gt;
+<span class="cp">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="cp">%}</span>
+
+&lt;!-- Pagination links --&gt;
+&lt;div class="pagination"&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">previous_page</span><span class="w"> </span><span class="cp">%}</span>
+    &lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">previous_page_path</span><span class="w"> </span><span class="cp">}}</span>" class="previous"&gt;
+      Previous
+    &lt;/a&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="cp">%}</span>
+    &lt;span class="previous"&gt;Previous&lt;/span&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">endif</span><span class="w"> </span><span class="cp">%}</span>
+  &lt;span class="page_number "&gt;
+    Page: <span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">page</span><span class="w"> </span><span class="cp">}}</span> of <span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">total_pages</span><span class="w"> </span><span class="cp">}}</span>
+  &lt;/span&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">next_page</span><span class="w"> </span><span class="cp">%}</span>
+    &lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">next_page_path</span><span class="w"> </span><span class="cp">}}</span>" class="next"&gt;Next&lt;/a&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="cp">%}</span>
+    &lt;span class="next "&gt;Next&lt;/span&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">endif</span><span class="w"> </span><span class="cp">%}</span>
+&lt;/div&gt;</code></pre></figure>
+
+<p><strong>Now you have your paginated post.</strong></p>
+
+<ul>
+  <li>Not successfull?
+    <ol>
+      <li>Make sure there’s no typo in any of the  entries.</li>
+      <li>Make sure you executed every command.</li>
+      <li>Comment your issue.</li>
+    </ol>
+  </li>
+</ul>
+</section>
+
+
+  </div>
+<div class="post-rss-flex">
+  <h3>Comments</h3><span class="post-rss-right"><center>
+  <div class="rss-flex">
+    <div class="rss-flex-img"><a href="/feed.xml"><img src="/assets/graphics/rss.png" alt="Feed" width="15px"></a></div>
+  <div class="rss-flex-text"><a href="/feed.xml">RSS Feed</a>
+  </div>
+</center>
+</span>
+</div>
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://twisthead-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
+
+  </body>
+
+</html>

@@ -1,4 +1,106 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-10T02:04:16+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Najm Us Saqib’s Personal Website</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How Web Apps can actually help grow Linux</title><link href="http://localhost:4000/2023/11/03/how-desktop-apps-can-help-linux.html" rel="alternate" type="text/html" title="How Web Apps can actually help grow Linux" /><published>2023-11-03T19:48:00+05:30</published><updated>2023-11-03T19:48:00+05:30</updated><id>http://localhost:4000/2023/11/03/how-desktop-apps-can-help-linux</id><content type="html" xml:base="http://localhost:4000/2023/11/03/how-desktop-apps-can-help-linux.html"><![CDATA[<p>I am a very passionate Linux user, and I appreciate the philosophy that works behind the “Free Software” and “Open Source Initiative”.<!--more--> Linux in the computing world acts as an equivalent to the opposition parties in a democracy. In a democracy, an opposition party is needed to keep the ruling party in check. Just like in the computing world, the ruling party is the big tech companies that enjoy a large market share of their products. Linux (or any alternative OS to Windows and macOS such as FreeBSD, Haiku, etc.) keeps checking on the operating systems that have a larger market share. Users always have the option to move away from the operating system they are currently using if they are not satisfied with the services. Linux provides that option. However, many users can’t make the change because of the unavailability of software and apps for Linux. A lot of software developers do not make their software compatible with Linux because the market share is comparatively lower than that of mainstream operating systems.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-10T14:17:55+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Najm Us Saqib’s Personal Website</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Easiest way to add pagination in Jekyll</title><link href="http://localhost:4000/2023/12/09/adding-pagination-in-jekyll-site.html" rel="alternate" type="text/html" title="Easiest way to add pagination in Jekyll" /><published>2023-12-09T10:37:00+05:30</published><updated>2023-12-09T10:37:00+05:30</updated><id>http://localhost:4000/2023/12/09/adding-pagination-in-jekyll-site</id><content type="html" xml:base="http://localhost:4000/2023/12/09/adding-pagination-in-jekyll-site.html"><![CDATA[<p>Recently I was thinking of adding pagination to my site, and it turned out to be a nighmare. <!--more--> I had to google so many things and waste so much time. After spending considerable amount of time researching, I got it working finally.</p>
+
+<p>The pagination in Jekyll is difficult and it is incomprehensively documented on Jekyll Docs, which makes it pretty difficult to add pagination to the site. Here I am aiming to sum up numerous tutorials which helped me add pagination to my site.</p>
+
+<p>Follow along and do exactly what’s stated and you’ll have the pagination.</p>
+
+<p><strong>1. Install required gems</strong></p>
+
+<p>You need to install the plugin <code class="language-plaintext highlighter-rouge">"jekyll-pagination"</code>.</p>
+
+<p><strong>Edit “config.yml” &amp; “gemfile” file</strong></p>
+
+<p>Add the follwing lines in config.yml</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">plugins</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">jekyll-paginate</span>
+
+<span class="na">paginate</span><span class="pi">:</span> <span class="m">5</span>
+<span class="na">paginate-path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/blog/page:num/"</span></code></pre></figure>
+
+<p>It should look something like this</p>
+
+<blockquote>
+  <p><img src="/assets/ss-for-blog/plugin.png" alt="code" /></p>
+</blockquote>
+
+<p>Add the following line to “gemfile” located in the root directory.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># place it just below the line "group :jekyll_plugins do"</span>
+
+<span class="s">gem "jekyll-paginate"</span></code></pre></figure>
+
+<p>It should look something like this.</p>
+
+<blockquote>
+  <p><img src="/assets/ss-for-blog/gemfile.png" alt="gemfile" /></p>
+</blockquote>
+
+<ul>
+  <li>Open a terminal, navigate to your directory and run the command.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># run in terminal</span>
+
+bundle <span class="nb">install</span></code></pre></figure>
+
+<p>Now you are done with half of the work.</p>
+
+<p><strong>2. Making a page where you list your blogs.</strong></p>
+
+<ul>
+  <li>Make a folder called “blog” in project’s root directory.</li>
+  <li>Inside the folder make a file called “index.html”.</li>
+</ul>
+
+<p><strong>3. Put the below code to generate list of posts with pagination.</strong></p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+layout: default
+title: My Blog
+---
+
+&lt;!-- This loops through the paginated posts --&gt;
+<span class="cp">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">posts</span><span class="w"> </span><span class="cp">%}</span>
+  &lt;h1&gt;&lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="cp">}}</span>"&gt;<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="cp">}}</span>&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="author"&gt;
+    &lt;span class="date"&gt;<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="cp">}}</span>&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;div class="content"&gt;
+    <span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">content</span><span class="w"> </span><span class="cp">}}</span>
+  &lt;/div&gt;
+<span class="cp">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="cp">%}</span>
+
+&lt;!-- Pagination links --&gt;
+&lt;div class="pagination"&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">previous_page</span><span class="w"> </span><span class="cp">%}</span>
+    &lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">previous_page_path</span><span class="w"> </span><span class="cp">}}</span>" class="previous"&gt;
+      Previous
+    &lt;/a&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="cp">%}</span>
+    &lt;span class="previous"&gt;Previous&lt;/span&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">endif</span><span class="w"> </span><span class="cp">%}</span>
+  &lt;span class="page_number "&gt;
+    Page: <span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">page</span><span class="w"> </span><span class="cp">}}</span> of <span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">total_pages</span><span class="w"> </span><span class="cp">}}</span>
+  &lt;/span&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">next_page</span><span class="w"> </span><span class="cp">%}</span>
+    &lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">next_page_path</span><span class="w"> </span><span class="cp">}}</span>" class="next"&gt;Next&lt;/a&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="cp">%}</span>
+    &lt;span class="next "&gt;Next&lt;/span&gt;
+  <span class="cp">{%</span><span class="w"> </span><span class="nt">endif</span><span class="w"> </span><span class="cp">%}</span>
+&lt;/div&gt;</code></pre></figure>
+
+<p><strong>Now you have your paginated post.</strong></p>
+
+<ul>
+  <li>Not successfull?
+    <ol>
+      <li>Make sure there’s no typo in any of the  entries.</li>
+      <li>Make sure you executed every command.</li>
+      <li>Comment your issue.</li>
+    </ol>
+  </li>
+</ul>]]></content><author><name>Nazm Us Saqib</name></author><summary type="html"><![CDATA[Recently I was thinking of adding pagination to my site, and it turned out to be a nighmare.]]></summary></entry><entry><title type="html">How Web Apps can actually help grow Linux</title><link href="http://localhost:4000/2023/11/03/how-desktop-apps-can-help-linux.html" rel="alternate" type="text/html" title="How Web Apps can actually help grow Linux" /><published>2023-11-03T19:48:00+05:30</published><updated>2023-11-03T19:48:00+05:30</updated><id>http://localhost:4000/2023/11/03/how-desktop-apps-can-help-linux</id><content type="html" xml:base="http://localhost:4000/2023/11/03/how-desktop-apps-can-help-linux.html"><![CDATA[<p>I am a very passionate Linux user, and I appreciate the philosophy that works behind the “Free Software” and “Open Source Initiative”.<!--more--> Linux in the computing world acts as an equivalent to the opposition parties in a democracy. In a democracy, an opposition party is needed to keep the ruling party in check. Just like in the computing world, the ruling party is the big tech companies that enjoy a large market share of their products. Linux (or any alternative OS to Windows and macOS such as FreeBSD, Haiku, etc.) keeps checking on the operating systems that have a larger market share. Users always have the option to move away from the operating system they are currently using if they are not satisfied with the services. Linux provides that option. However, many users can’t make the change because of the unavailability of software and apps for Linux. A lot of software developers do not make their software compatible with Linux because the market share is comparatively lower than that of mainstream operating systems.</p>
 
 <p>The thesis argument of this blog is that “how could the web apps help popularise and make easy the move to Linux for the users?” As we move closer to making the web capable of doing almost all things natively on PCs, More and more software companies are providing web apps for their software, like Adobe Photoshop, which does not have a Linux version of their software. So, the user can actually use the web version of Photoshop on Linux as it can on Windows or macOS. Linux supports browsers and performs natively with web apps, and in many cases, it performs way better than Windows. With the growing popularity of web apps, it is going to be immensely easy for those users who hesitate to migrate because the software they work on does not support Linux.</p>
 
