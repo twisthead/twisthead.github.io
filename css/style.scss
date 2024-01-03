@@ -22,6 +22,7 @@ body {
 }
 
 p,
+li,
 h1,
 h2,
 h3,
@@ -88,7 +89,7 @@ div {
 .topnav {
     overflow: hidden;
     text-align: center;
-    padding-top: 10px;
+    margin-bottom: 0;
 }
 
 /* Style the links inside the navigation bar */

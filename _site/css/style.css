@@ -2,6 +2,7 @@
   background-color: #272822;
   padding: 20px;
   border-radius: 7px;
+  overflow-x: scroll;
 }
 
 .highlight .hll {
@@ -205,6 +206,7 @@ body {
 }
 
 p,
+li,
 h1,
 h2,
 h3,
@@ -267,7 +269,7 @@ div {
 .topnav {
   overflow: hidden;
   text-align: center;
-  padding-top: 10px;
+  margin-bottom: 0;
 }
 
 /* Style the links inside the navigation bar */
