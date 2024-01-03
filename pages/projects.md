@@ -10,3 +10,7 @@ When I read 'One Hundred Years of Solitude', it inspired me very much. When I lo
 ### My CV
 
 Made a single page website which is basically my CV. Was just doing for fun, learned some cool things about data files in Jekyll. Have a look [here](https://twisthead.github.io/curriculum-vitae/).
+
+### My Daily Journal
+
+Since I like writing a lot and I love to make wepages as well, so I though maybe I should collaborate with me and make a website where I would post my daily journals if I could. So, I made one. [Check Out](https://twisthead.github.io/daily-journal/)
