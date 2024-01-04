@@ -18,7 +18,7 @@ You need to install the plugin `"jekyll-pagination"`.
 
 **Edit "config.yml" & "gemfile" file**
 
-Add the follwing lines in config.yml
+Add the follwing lines in 'config.yml'
 
 {% highlight yaml %}
 plugins:

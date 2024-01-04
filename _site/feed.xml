@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-03T07:00:38+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Najm Us Saqib’s Personal Website</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Easiest way to add pagination in Jekyll</title><link href="http://localhost:4000/2023/12/09/adding-pagination-in-jekyll-site.html" rel="alternate" type="text/html" title="Easiest way to add pagination in Jekyll" /><published>2023-12-09T10:37:00+05:30</published><updated>2023-12-09T10:37:00+05:30</updated><id>http://localhost:4000/2023/12/09/adding-pagination-in-jekyll-site</id><content type="html" xml:base="http://localhost:4000/2023/12/09/adding-pagination-in-jekyll-site.html"><![CDATA[<p>Recently I was thinking of adding pagination to my site, and it turned out to be a nighmare. <!--more--> I had to google so many things and waste so much time. After spending considerable amount of time researching, I got it working finally.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-05T03:25:08+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Najm Us Saqib’s Personal Website</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Experiences While Making a CV Website</title><link href="http://localhost:4000/2024/01/05/cv.html" rel="alternate" type="text/html" title="Experiences While Making a CV Website" /><published>2024-01-05T02:09:00+05:30</published><updated>2024-01-05T02:09:00+05:30</updated><id>http://localhost:4000/2024/01/05/cv</id><content type="html" xml:base="http://localhost:4000/2024/01/05/cv.html"><![CDATA[<p>So, recently I have taken to creating multiple websites, which include a daily journal which is heavily a work in progress and the second one is my CV.<!--more--> Creating a single-page CV website was not a challenging task unto itself, but making it through an <abbr title="Static Site Generetor">SSG</abbr> was kind of a bump in a road. You see, writing vanilla HTML is boring and repetitive, by using an SSG we can automate the repeating code and just write the main content. Since, I am learning to work with Jekyll, so I thought I’d give it a try.</p>
+
+<p>When I started writing, I started by manually writing all the information, my details and everything, but just then I though wait, I can automate this as well. I thought of a thing called ‘data files’. Using ‘data files’ you can store data in a separate file and then render those data in the HTML. By this you need not write code every time you enter some new detail, rather you just enter the specific data in the data files, and it will be automatically generated for you.</p>
+
+<p>For example, let’s say my CV has a section which lists all the internships I’ve done till date, so I entered the list in the code like this</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+<span class="nt">&lt;li&gt;</span>
+<span class="nt">&lt;strong&gt;</span>Name:<span class="nt">&lt;/strong&gt;</span>Internship 1 <span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;strong&gt;</span>details:<span class="nt">&lt;/strong&gt;</span>details regarding the internship <span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;strong&gt;</span>details:<span class="nt">&lt;/strong&gt;</span>more details 
+<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+
+<p>But after using ‘data files’ I can write as little as just.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="pi">-</span> <span class="na">Name</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Internship</span><span class="nv"> </span><span class="s">1'</span>
+  <span class="na">details</span><span class="pi">:</span> <span class="s">details of the internship</span>
+  <span class="na">details</span><span class="pi">:</span> <span class="s">more details</span></code></pre></figure>
+
+<p>Now while these benefits exist, another pros is even important which is the readability of the document, I mean if I write a long HTML document it is going to be a disaster if I need to make some changes in the future. For simplicity’s sake, using ‘data files’ was the best way to go. In Jekyll, I made a ‘YAML’ file and put all my details there, and then wrote code in the index.html to render the data in the webpage. So, now with as little code as possible and without repeating the same code, I can display all my details.</p>
+
+<p>Another thing I did was, instead of writing my own CSS to style the webpage, I turned my head towards the CSS frameworks. The CSS frameworks are basically pre-written code (which are fashionably called boilerplate code) which you can use in your website without having to write all the same code yourself. The frameworks are a great way of saving time, because why waste time writing some code which has already been written by numerous people.</p>
+
+<p>After several hours of work, I finally managed to create a website which looks good and is minimal. However, I am still thinking about changing font and several minor improvements, otherwise the website is ready.</p>
+
+<p>Here, you can have a look - <a href="https://twisthead.github.io/curriculum-vitae/">CV</a></p>]]></content><author><name>Nazm Us Saqib</name></author><summary type="html"><![CDATA[So, recently I have taken to creating multiple websites, which include a daily journal which is heavily a work in progress and the second one is my CV.]]></summary></entry><entry><title type="html">Easiest way to add pagination in Jekyll</title><link href="http://localhost:4000/2023/12/09/adding-pagination-in-jekyll-site.html" rel="alternate" type="text/html" title="Easiest way to add pagination in Jekyll" /><published>2023-12-09T10:37:00+05:30</published><updated>2023-12-09T10:37:00+05:30</updated><id>http://localhost:4000/2023/12/09/adding-pagination-in-jekyll-site</id><content type="html" xml:base="http://localhost:4000/2023/12/09/adding-pagination-in-jekyll-site.html"><![CDATA[<p>Recently I was thinking of adding pagination to my site, and it turned out to be a nighmare. <!--more--> I had to google so many things and waste so much time. After spending considerable amount of time researching, I got it working finally.</p>
 
 <p>The pagination in Jekyll is difficult and it is incomprehensively documented on Jekyll Docs, which makes it pretty difficult to add pagination to the site. Here I am aiming to sum up numerous tutorials which helped me add pagination to my site.</p>
 
@@ -10,7 +36,7 @@
 
 <p><strong>Edit “config.yml” &amp; “gemfile” file</strong></p>
 
-<p>Add the follwing lines in config.yml</p>
+<p>Add the follwing lines in ‘config.yml’</p>
 
 <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">plugins</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">jekyll-paginate</span>

@@ -5,6 +5,10 @@
   overflow-x: scroll;
 }
 
+.highlight pre::-webkit-scrollbar {
+  display: none;
+}
+
 .highlight .hll {
   background-color: #272822;
 }

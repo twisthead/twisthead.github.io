@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+   <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiences While Making a CV Website - Najm Us Saqib</title>
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Najm Us Saqib&apos;s Personal Website" />
+
+
+  </head>
+  <body>
+
+          <p class="topnav">
+  [<a href="/">Home</a>]
+  [<a href="/bio">Bio</a>]
+ [<a href="/blog/">Writeups</a>]
+  [<a href="/books">Books</a>]
+  [<a href="/projects">Projects</a>]
+  [<a href="/contact">Contact</a>]
+</p>
+
+
+<div id="centerpara">
+  <div class="post-flex">
+
+<div class="post-heading">Experiences While Making a CV Website</div>
+<p class="date">05 January 2024 &bull; Nazm Us Saqib</p>
+<section><p>So, recently I have taken to creating multiple websites, which include a daily journal which is heavily a work in progress and the second one is my CV.<!--more--> Creating a single-page CV website was not a challenging task unto itself, but making it through an <abbr title="Static Site Generetor">SSG</abbr> was kind of a bump in a road. You see, writing vanilla HTML is boring and repetitive, by using an SSG we can automate the repeating code and just write the main content. Since, I am learning to work with Jekyll, so I thought I’d give it a try.</p>
+
+<p>When I started writing, I started by manually writing all the information, my details and everything, but just then I though wait, I can automate this as well. I thought of a thing called ‘data files’. Using ‘data files’ you can store data in a separate file and then render those data in the HTML. By this you need not write code every time you enter some new detail, rather you just enter the specific data in the data files, and it will be automatically generated for you.</p>
+
+<p>For example, let’s say my CV has a section which lists all the internships I’ve done till date, so I entered the list in the code like this</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+<span class="nt">&lt;li&gt;</span>
+<span class="nt">&lt;strong&gt;</span>Name:<span class="nt">&lt;/strong&gt;</span>Internship 1 <span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;strong&gt;</span>details:<span class="nt">&lt;/strong&gt;</span>details regarding the internship <span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;strong&gt;</span>details:<span class="nt">&lt;/strong&gt;</span>more details 
+<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+
+<p>But after using ‘data files’ I can write as little as just.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="pi">-</span> <span class="na">Name</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Internship</span><span class="nv"> </span><span class="s">1'</span>
+  <span class="na">details</span><span class="pi">:</span> <span class="s">details of the internship</span>
+  <span class="na">details</span><span class="pi">:</span> <span class="s">more details</span></code></pre></figure>
+
+<p>Now while these benefits exist, another pros is even important which is the readability of the document, I mean if I write a long HTML document it is going to be a disaster if I need to make some changes in the future. For simplicity’s sake, using ‘data files’ was the best way to go. In Jekyll, I made a ‘YAML’ file and put all my details there, and then wrote code in the index.html to render the data in the webpage. So, now with as little code as possible and without repeating the same code, I can display all my details.</p>
+
+<p>Another thing I did was, instead of writing my own CSS to style the webpage, I turned my head towards the CSS frameworks. The CSS frameworks are basically pre-written code (which are fashionably called boilerplate code) which you can use in your website without having to write all the same code yourself. The frameworks are a great way of saving time, because why waste time writing some code which has already been written by numerous people.</p>
+
+<p>After several hours of work, I finally managed to create a website which looks good and is minimal. However, I am still thinking about changing font and several minor improvements, otherwise the website is ready.</p>
+
+<p>Here, you can have a look - <a href="https://twisthead.github.io/curriculum-vitae/">CV</a></p>
+</section>
+
+
+  </div>
+<div class="post-rss-flex">
+  <h3>Comments</h3><span class="post-rss-right"><center>
+  <div class="rss-flex">
+    <div class="rss-flex-img"><a href="/feed.xml"><img src="/assets/graphics/rss.png" alt="Feed" width="15px"></a></div>
+  <div class="rss-flex-text"><a href="/feed.xml">RSS Feed</a>
+  </div>
+</center>
+</span>
+</div>
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://twisthead-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
+
+  </body>
+
+</html>
