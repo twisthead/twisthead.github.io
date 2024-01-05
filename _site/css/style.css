@@ -224,6 +224,17 @@ section {
   color: #FFC2B4;
 }
 
+.post-content {
+  border-top: 1px solid #FF8882;
+  border-bottom: 1px solid #FF8882;
+  margin: 1.5em 0;
+  padding: 0.5em 0 1.5em 0;
+}
+
+.post-content > p {
+  text-indent: 1.5em;
+}
+
 a:hover {
   text-shadow: 2px 2px 8px #9DBEB9;
 }
@@ -385,6 +396,7 @@ a > p {
 .date {
   margin: 0;
   font-size: smaller;
+  padding-top: 0.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
