@@ -38,11 +38,11 @@ section {
 .post-content {
     border-top: 1px solid $linkcolor;
     border-bottom: 1px solid $linkcolor;
-    margin: 1.5em 0;
+    margin: 1.5em 0 0 0;
     padding: .5em 0 1.5em 0;
 }
 .post-content>p {
-    text-indent: 1.5em;
+    text-indent: 2em;
 }
 
 a:hover {
