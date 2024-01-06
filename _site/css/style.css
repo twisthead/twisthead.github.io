@@ -206,7 +206,7 @@
 }
 body {
   background-color: #194350;
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono", "Courier New", Courier, monospace;
 }
 
 p,

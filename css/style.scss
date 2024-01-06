@@ -1,13 +1,14 @@
----
----
+--- 
+--- 
 
 $bgcolor: #194350;
-$pfont: 'Space Mono', monospace;
+$pfont: 'Space Mono', 'Courier New', Courier, monospace;
 $pcolor: #FFC2B4;
 $linkcolor: #FF8882;
 $link-shadow-color: #9DBEB9;
 
 @import "moonkai";
+
 @font-face {
     font-family: 'beast-face';
     src: url('/assets/fonts/beast-head.woff2') format('woff2'),
@@ -35,12 +36,14 @@ h6 {
 section {
     color: $pcolor;
 }
+
 .post-content {
     border-top: 1px solid $linkcolor;
     border-bottom: 1px solid $linkcolor;
     margin: 1.5em 0 0 0;
     padding: .5em 0 1.5em 0;
 }
+
 .post-content>p {
     text-indent: 2em;
 }
