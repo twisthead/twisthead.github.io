@@ -210,6 +210,8 @@ body {
 }
 
 p,
+i,
+b,
 li,
 h1,
 h2,
@@ -225,8 +227,8 @@ section {
 }
 
 .post-content {
-  border-top: 1px solid #FF8882;
-  border-bottom: 1px solid #FF8882;
+  border-top: 1.5px dotted #FF8882;
+  border-bottom: 1.5px dotted #FF8882;
   margin: 1.5em 0 0 0;
   padding: 0.5em 0 1.5em 0;
 }
@@ -267,6 +269,7 @@ div {
 /* Default padding for large screens */
 #centerpara {
   padding: 1% 25%;
+  text-align: justify;
 }
 
 /* For tablets or medium-sized screens */
@@ -331,8 +334,8 @@ a > p {
 }
 
 .post-heading {
-  font-weight: bold;
-  font-size: 1.2em;
+  font-weight: 900;
+  font-size: 1.3em;
   margin: 0;
 }
 
