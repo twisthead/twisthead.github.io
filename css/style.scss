@@ -48,16 +48,19 @@ section {
 
 .post-content>p {
     text-indent: 2em;
-}
-
-a:hover {
-    text-shadow: 2px 2px 8px $link-shadow-color;
+    text-align: justify;
 }
 
 a,
 a>p,
 div {
     color: $linkcolor;
+}
+
+a:hover {
+    text-shadow: 2px 2px 8px $link-shadow-color;
+    color: $bgcolor;
+    background-color: $linkcolor;
 }
 
 .name {
@@ -75,15 +78,21 @@ div {
     padding-top: 20;
 }
 
-.intro1 {
+.center {
     text-align: center;
-
+}
+.stand-with-palestine {
+  background-color: $pcolor;
+  color: $bgcolor;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5em;
 }
 
 /* Default padding for large screens */
 #centerpara {
     padding: 1% 25%;
-    text-align: justify;
+
 }
 
 /* For tablets or medium-sized screens */

@@ -235,16 +235,19 @@ section {
 
 .post-content > p {
   text-indent: 2em;
-}
-
-a:hover {
-  text-shadow: 2px 2px 8px #9DBEB9;
+  text-align: justify;
 }
 
 a,
 a > p,
 div {
   color: #FF8882;
+}
+
+a:hover {
+  text-shadow: 2px 2px 8px #9DBEB9;
+  color: #194350;
+  background-color: #FF8882;
 }
 
 .name {
@@ -262,14 +265,21 @@ div {
   padding-top: 20;
 }
 
-.intro1 {
+.center {
   text-align: center;
+}
+
+.stand-with-palestine {
+  background-color: #FFC2B4;
+  color: #194350;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5em;
 }
 
 /* Default padding for large screens */
 #centerpara {
   padding: 1% 25%;
-  text-align: justify;
 }
 
 /* For tablets or medium-sized screens */
