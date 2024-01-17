@@ -245,9 +245,12 @@ div {
 }
 
 a:hover {
-  text-shadow: 2px 2px 8px #9DBEB9;
   color: #194350;
   background-color: #FF8882;
+}
+
+hr {
+  border-top: 0;
 }
 
 .name {
