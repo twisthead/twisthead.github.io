@@ -198,6 +198,103 @@
 .highlight .gi {
   color: #a6e22e;
 } /* Generic.Inserted & Diff Inserted */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.word {
+  text-align: center;
+  font-size: 24px;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  margin-left: -15px;
+}
+
+.letter:nth-child(1) {
+  animation: fadeInLeft 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+.letter:nth-child(2) {
+  animation: fadeInLeft 0.5s forwards;
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(3) {
+  animation: fadeInLeft 0.5s forwards;
+  animation-delay: 0.3s;
+}
+
+.letter:nth-child(4) {
+  animation: fadeInLeft 0.5s forwards;
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(5) {
+  /* "L" remains in the center, no animation */
+  opacity: 1;
+}
+
+.letter:nth-child(6) {
+  /* "L" remains in the center, no animation */
+  /* opacity: 1; */
+  animation: fadeInLeft 0.5s forwards;
+}
+
+.letter:nth-child(7) {
+  /* "L" remains in the center, no animation */
+  /* opacity: 1; */
+  animation: fadeInRight 0.5s forwards;
+}
+
+.letter:nth-child(8) {
+  opacity: 1;
+}
+
+.letter:nth-child(9) {
+  animation: fadeInRight 0.5s forwards;
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(10) {
+  animation: fadeInRight 0.5s forwards;
+  animation-delay: 0.3s;
+}
+
+.letter:nth-child(11) {
+  animation: fadeInRight 0.5s forwards;
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(12) {
+  animation: fadeInRight 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+.letter:nth-child(13) {
+  animation: fadeInRight 0.5s forwards;
+  animation-delay: 0.6s;
+}
+
 @font-face {
   font-family: "beast-face";
   src: url("/assets/fonts/beast-head.woff2") format("woff2"), url("/assets/fonts/beast-head.woff") format("woff");
@@ -413,6 +510,22 @@ a > p {
   margin: 0;
   font-size: smaller;
   padding-top: 0.2em;
+}
+
+.previous,
+.next {
+  font-size: 2em;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: #194350;
+  color: #FF8882;
+  text-shadow: 2px 2px 8px #9DBEB9;
+}
+
+.sher {
+  font-family: "Noto Nastaliq Urdu", serif;
 }
 
 /*# sourceMappingURL=style.css.map */

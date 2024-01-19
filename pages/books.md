@@ -13,9 +13,10 @@ In this section I will list what books I am reading or have read earlier and boo
 2.  One Hundred Years of Solitude by Gabriel García Marquez
 3.  Hamlet by William Shakespeare
 4.  Thousand Splendid Suns by Khaled Hosseini
-5.  The Mayor of Casterbridge & The Return of the Native by Thomas Hardy
+5.  The Mayor of Casterbridge by Thomas Hardy
+6. 
 
-**//Books I have read//**
+**// Books I have read //**
 
 [**Complete List**]({% link pages/books-read.md %})  
 

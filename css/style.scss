@@ -1,7 +1,7 @@
 ---
 ---
-
 @import "moonkai";
+@import "name-animation";
 
 $bgcolor: #194350;
 $pfont: 'Space Mono', 'Courier New', Courier, monospace;
@@ -57,6 +57,7 @@ a>p,
 div {
     color: $linkcolor;
 }
+
 //     text-shadow: 2px 2px 8px $link-shadow-color;
 
 a:hover {
@@ -64,7 +65,9 @@ a:hover {
     background-color: $linkcolor;
 }
 
-hr {border-top: 0;}
+hr {
+    border-top: 0;
+}
 
 .name {
     font-family: beast-face, serif;
@@ -84,12 +87,13 @@ hr {border-top: 0;}
 .center {
     text-align: center;
 }
+
 .stand-with-palestine {
-  background-color: $pcolor;
-  color: $bgcolor;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 0.5em;
+    background-color: $pcolor;
+    color: $bgcolor;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5em;
 }
 
 /* Default padding for large screens */
@@ -232,3 +236,25 @@ a>p {
     font-size: smaller;
     padding-top: .2em;
 }
+
+// PREVIOUS AND NEXT ARROW ON WRITEUP PAGE
+
+.previous,
+.next {
+    font-size: 2em;
+
+    // font-weight: bold;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: $bgcolor;
+    color: $linkcolor;
+    text-shadow: 2px 2px 8px $link-shadow-color;
+}
+
+// ---FONT STYLE FOR SHAYARI-------
+.sher {
+    font-family: 'Noto Nastaliq Urdu', serif;
+}
+

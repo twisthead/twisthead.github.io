@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Animation</title>
+    <style>
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .word {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .letter {
+            display: inline-block;
+            opacity: 0;
+        }
+
+        .letter:nth-child(1) {
+            animation: fadeInLeft 0.5s forwards;
+            animation-delay: 0.5s;       
+        }
+        .letter:nth-child(2) {
+            animation: fadeInLeft 0.5s forwards;
+            animation-delay: 0.4s;       
+        }
+
+        .letter:nth-child(3) {
+            animation: fadeInLeft 0.5s forwards;
+            animation-delay: 0.3s;
+        }
+        .letter:nth-child(4) {
+            animation: fadeInLeft 0.5s forwards;
+            animation-delay: 0.2s;
+        }
+
+        .letter:nth-child(5) {
+            /* "L" remains in the center, no animation */
+            opacity: 1;
+        }
+        .letter:nth-child(6) {
+            /* "L" remains in the center, no animation */
+            /* opacity: 1; */
+            animation: fadeInLeft 0.5s forwards;
+
+        }
+        .letter:nth-child(7) {
+            /* "L" remains in the center, no animation */
+            /* opacity: 1; */
+            animation: fadeInRight 0.5s forwards;
+
+        }
+        .letter:nth-child(8) {
+            opacity: 1;
+        }
+        .letter:nth-child(9) {
+            animation: fadeInRight 0.5s forwards;
+            animation-delay: 0.2s;
+        }
+        .letter:nth-child(10) {
+            animation: fadeInRight 0.5s forwards;
+            animation-delay: 0.3s;
+        }
+        .letter:nth-child(11) {
+            animation: fadeInRight 0.5s forwards;
+            animation-delay: 0.4s;
+        }
+        .letter:nth-child(12) {
+            animation: fadeInRight 0.5s forwards;
+            animation-delay: 0.5s;
+        }
+        .letter:nth-child(13) {
+            animation: fadeInRight 0.5s forwards;
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="word">
+        <span class="letter">N</span>
+        <span class="letter">A</span>
+        <span class="letter">J</span>
+        <span class="letter">M</span>
+        <span class="letter">&nbsp;</span>
+
+        <span class="letter">U</span>
+        <span class="letter">S</span>
+        <span class="letter">&nbsp;</span>
+        <span class="letter">S</span>
+        <span class="letter">A</span>
+        <span class="letter">Q</span>
+        <span class="letter">I</span>
+        <span class="letter">B</span>
+
+    </div>
+
+</body>
+</html>
