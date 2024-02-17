@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-20T02:36:13+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Najm Us Saqib’s Personal Website</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Experiences While Making a CV Website</title><link href="http://localhost:4000/2024/01/05/cv.html" rel="alternate" type="text/html" title="Experiences While Making a CV Website" /><published>2024-01-05T00:09:00+05:30</published><updated>2024-01-05T00:09:00+05:30</updated><id>http://localhost:4000/2024/01/05/cv</id><content type="html" xml:base="http://localhost:4000/2024/01/05/cv.html"><![CDATA[<p>So, recently I have taken to creating multiple websites, which include a daily journal which is heavily a work in progress and the second one is my CV.<!--more--> Creating a single-page CV website was not a challenging task unto itself, but making it through an <abbr title="Static Site Generetor">SSG</abbr> was kind of a bump in a road. You see, writing vanilla HTML is boring and repetitive, by using an SSG we can automate the repeating code and just write the main content. Since, I am learning to work with Jekyll, so I thought I’d give it a try.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-18T05:12:29+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Najm Us Saqib’s Personal Website</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Experiences While Making a CV Website</title><link href="http://localhost:4000/2024/01/05/cv.html" rel="alternate" type="text/html" title="Experiences While Making a CV Website" /><published>2024-01-05T00:09:00+05:30</published><updated>2024-01-05T00:09:00+05:30</updated><id>http://localhost:4000/2024/01/05/cv</id><content type="html" xml:base="http://localhost:4000/2024/01/05/cv.html"><![CDATA[<p>So, recently I have taken to creating multiple websites, which include a daily journal which is heavily a work in progress and the second one is my CV.<!--more--> Creating a single-page CV website was not a challenging task unto itself, but making it through an <abbr title="Static Site Generetor">SSG</abbr> was kind of a bump in a road. You see, writing vanilla HTML is boring and repetitive, by using an SSG we can automate the repeating code and just write the main content. Since, I am learning to work with Jekyll, so I thought I’d give it a try.</p>
 
 <p>When I started writing, I started by manually writing all the information, my details and everything, but just then I though wait, I can automate this as well. I thought of a thing called ‘data files’. Using ‘data files’ you can store data in a separate file and then render those data in the HTML. By this you need not write code every time you enter some new detail, rather you just enter the specific data in the data files, and it will be automatically generated for you.</p>
 
@@ -81,40 +81,40 @@ bundle <span class="nb">install</span></code></pre></figure>
 
 <p><strong>3. Put the below code to generate list of posts with pagination.</strong></p>
 
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+<figure class="highlight"><pre><code class="language-html" data-lang="html">---
 layout: default
 title: My Blog
 ---
 
-&lt;!-- This loops through the paginated posts --&gt;
-<span class="cp">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">posts</span><span class="w"> </span><span class="cp">%}</span>
-  &lt;h1&gt;&lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="cp">}}</span>"&gt;<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="cp">}}</span>&lt;/a&gt;&lt;/h1&gt;
-  &lt;p class="author"&gt;
-    &lt;span class="date"&gt;<span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">date</span><span class="w"> </span><span class="cp">}}</span>&lt;/span&gt;
-  &lt;/p&gt;
-  &lt;div class="content"&gt;
-    <span class="cp">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">content</span><span class="w"> </span><span class="cp">}}</span>
-  &lt;/div&gt;
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="cp">%}</span>
+<span class="c">&lt;!-- This loops through the paginated posts --&gt;</span>
+{% for post in paginator.posts %}
+  <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ post.url }}"</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"author"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"date"</span><span class="nt">&gt;</span>{{ post.date }}<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    {{ post.content }}
+  <span class="nt">&lt;/div&gt;</span>
+{% endfor %}
 
-&lt;!-- Pagination links --&gt;
-&lt;div class="pagination"&gt;
-  <span class="cp">{%</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">previous_page</span><span class="w"> </span><span class="cp">%}</span>
-    &lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">previous_page_path</span><span class="w"> </span><span class="cp">}}</span>" class="previous"&gt;
+<span class="c">&lt;!-- Pagination links --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+  {% if paginator.previous_page %}
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ paginator.previous_page_path }}"</span> <span class="na">class=</span><span class="s">"previous"</span><span class="nt">&gt;</span>
       Previous
-    &lt;/a&gt;
-  <span class="cp">{%</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="cp">%}</span>
-    &lt;span class="previous"&gt;Previous&lt;/span&gt;
-  <span class="cp">{%</span><span class="w"> </span><span class="nt">endif</span><span class="w"> </span><span class="cp">%}</span>
-  &lt;span class="page_number "&gt;
-    Page: <span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">page</span><span class="w"> </span><span class="cp">}}</span> of <span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">total_pages</span><span class="w"> </span><span class="cp">}}</span>
-  &lt;/span&gt;
-  <span class="cp">{%</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">next_page</span><span class="w"> </span><span class="cp">%}</span>
-    &lt;a href="<span class="cp">{{</span><span class="w"> </span><span class="nv">paginator</span><span class="p">.</span><span class="nv">next_page_path</span><span class="w"> </span><span class="cp">}}</span>" class="next"&gt;Next&lt;/a&gt;
-  <span class="cp">{%</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="cp">%}</span>
-    &lt;span class="next "&gt;Next&lt;/span&gt;
-  <span class="cp">{%</span><span class="w"> </span><span class="nt">endif</span><span class="w"> </span><span class="cp">%}</span>
-&lt;/div&gt;</code></pre></figure>
+    <span class="nt">&lt;/a&gt;</span>
+  {% else %}
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"previous"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/span&gt;</span>
+  {% endif %}
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"page_number "</span><span class="nt">&gt;</span>
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  <span class="nt">&lt;/span&gt;</span>
+  {% if paginator.next_page %}
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ paginator.next_page_path }}"</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;</span>
+  {% else %}
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"next "</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/span&gt;</span>
+  {% endif %}
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <p><strong>Now you have your paginated post.</strong></p>
 

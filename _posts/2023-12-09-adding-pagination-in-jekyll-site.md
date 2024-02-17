@@ -61,7 +61,7 @@ Now you are done with half of the work.
 
 **3. Put the below code to generate list of posts with pagination.**
 
-{% highlight liquid %}
+{% highlight html %}
 {% raw %}
 ---
 layout: default
