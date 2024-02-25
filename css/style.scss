@@ -69,7 +69,22 @@ a:hover {
 hr {
     border-top: 0;
 }
-
+details {
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    & pre {
+    font-size: 1em;
+    color: $pcolor;
+    font-family: $pfont;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    }
+}
+details[open] > pre {
+    max-height: fit-content;
+}
 .name {
     font-family: beast-face, serif;
     font-size: 9vw;
@@ -88,7 +103,10 @@ hr {
 .center {
     text-align: center;
 }
-
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
 .stand-with-palestine {
     background-color: $pcolor;
     color: $bgcolor;
