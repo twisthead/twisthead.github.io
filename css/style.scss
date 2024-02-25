@@ -59,7 +59,7 @@ div {
     color: $linkcolor;
 }
 
-//     text-shadow: 2px 2px 8px $link-shadow-color;
+// text-shadow: 2px 2px 8px $link-shadow-color;
 
 a:hover {
     color: $bgcolor;
@@ -77,9 +77,10 @@ details {
     font-size: 1em;
     color: $pcolor;
     font-family: $pfont;
-    transition: max-height 0.3s ease;
-    overflow: hidden;
-    max-height: 0;
+    overflow: scroll;
+    }
+    & pre::-webkit-scrollbar {
+        display: none;
     }
 }
 details[open] > pre {

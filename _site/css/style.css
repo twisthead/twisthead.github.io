@@ -360,9 +360,10 @@ details pre {
   font-size: 1em;
   color: #FFC2B4;
   font-family: "Space Mono", "Courier New", Courier, monospace;
-  transition: max-height 0.3s ease;
-  overflow: hidden;
-  max-height: 0;
+  overflow: scroll;
+}
+details pre::-webkit-scrollbar {
+  display: none;
 }
 
 details[open] > pre {

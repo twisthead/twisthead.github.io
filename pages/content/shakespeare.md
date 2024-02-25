@@ -7,85 +7,139 @@ title: Shakespeare
 Shakespeare has something different about him. No wonder he's considered as world's greatest writer. I love Shakespeare's writing as well, in this page I'll present soem tidbits of myself + Shakespeare.
 
 Most of all, I love his soliloquis a lot. They have something exquisitly poetic about themselves which makes the larynx just blurb out the words. I have my favs as well. 
-
+<details>
+  <summary>Macbeth</summary>
+<pre>
+  Tomorrow, and tomorrow, and tomorrow,
+  Creeps in this petty pace from day to day,
+  To the last syllable of recorded time;
+  And all our yesterdays have lighted fools
+  The way to dusty death. Out, out, brief candle!
+  Life's but a walking shadow, a poor player,
+  That struts and frets his hour upon the stage,
+  And then is heard no more. It is a tale
+  Told by an idiot, full of sound and fury,
+  Signifying nothing.
+</pre>
+</details>
+<details>
+<summary>Julius Caesar, spoken by Marc Antony</summary>
+  <pre>
+  Friends, Romans, countrymen, lend me your ears;
+  I come to bury Caesar, not to praise him.
+  The evil that men do lives after them;
+  The good is oft interred with their bones;
+  So let it be with Caesar. The noble Brutus
+  Hath told you Caesar was ambitious:
+  If it were so, it was a grievous fault,
+  And grievously hath Caesar answer’d it.
+  Here, under leave of Brutus and the rest–
+  For Brutus is an honourable man;
+  So are they all, all honourable men–
+  Come I to speak in Caesar’s funeral.
+  He was my friend, faithful and just to me:
+  But Brutus says he was ambitious;
+  And Brutus is an honourable man.
+  He hath brought many captives home to Rome
+  Whose ransoms did the general coffers fill:
+  Did this in Caesar seem ambitious?
+  When that the poor have cried, Caesar hath wept:
+  Ambition should be made of sterner stuff:
+  Yet Brutus says he was ambitious;
+  And Brutus is an honourable man.
+  You all did see that on the Lupercal
+  I thrice presented him a kingly crown,
+  Which he did thrice refuse: was this ambition?
+  Yet Brutus says he was ambitious;
+  And, sure, he is an honourable man.
+  I speak not to disprove what Brutus spoke,
+  But here I am to speak what I do know.
+  You all did love him once, not without cause:
+  What cause withholds you then, to mourn for him?
+  O judgment! thou art fled to brutish beasts,
+  And men have lost their reason. Bear with me;
+  My heart is in the coffin there with Caesar,
+  And I must pause till it come back to me.
+  </pre>
+  </details>
 <details>
   <summary>Henry VI Part III (ACT 3, Scene 2)</summary>
   <pre>
-    I'll make my heaven to dream upon the crown,
-    And, whiles I live, to account this world but hell,
-    Until my mis-shaped trunk that bears this head
-    Be round impaled with a glorious crown.
-    And yet I know not how to get the crown,
-    For many lives stand between me and home:
-    And I,--like one lost in a thorny wood,
-    That rends the thorns and is rent with the thorns,
-    Seeking a way and straying from the way;
-    Not knowing how to find the open air,
-    But toiling desperately to find it out,--
-    Torment myself to catch the English crown:
-    And from that torment I will free myself,
-    Or hew my way out with a bloody axe.
-    Why, I can smile, and murder whiles I smile,
-    And cry 'Content' to that which grieves my heart,
-    And wet my cheeks with artificial tears,
-    And frame my face to all occasions.
-    I'll drown more sailors than the mermaid shall;
-    I'll slay more gazers than the basilisk;
-    I'll play the orator as well as Nestor,
-    Deceive more slily than Ulysses could,
-    And, like a Sinon, take another Troy.
-    I can add colours to the chameleon,
-    Change shapes with Proteus for advantages,
-    And set the murderous Machiavel to school.
-    Can I do this, and cannot get a crown?
-    Tut, were it farther off, I'll pluck it down.
+  I'll make my heaven to dream upon the crown,
+  And, whiles I live, to account this world but hell,
+  Until my mis-shaped trunk that bears this head
+  Be round impaled with a glorious crown.
+  And yet I know not how to get the crown,
+  For many lives stand between me and home:
+  And I,--like one lost in a thorny wood,
+  That rends the thorns and is rent with the thorns,
+  Seeking a way and straying from the way;
+  Not knowing how to find the open air,
+  But toiling desperately to find it out,--
+  Torment myself to catch the English crown:
+  And from that torment I will free myself,
+  Or hew my way out with a bloody axe.
+  Why, I can smile, and murder whiles I smile,
+  And cry 'Content' to that which grieves my heart,
+  And wet my cheeks with artificial tears,
+  And frame my face to all occasions.
+  I'll drown more sailors than the mermaid shall;
+  I'll slay more gazers than the basilisk;
+  I'll play the orator as well as Nestor,
+  Deceive more slily than Ulysses could,
+  And, like a Sinon, take another Troy.
+  I can add colours to the chameleon,
+  Change shapes with Proteus for advantages,
+  And set the murderous Machiavel to school.
+  Can I do this, and cannot get a crown?
+  Tut, were it farther off, I'll pluck it down.
   </pre>
 </details>
 
 <details>
   <summary>Richard III (Act 1, Scene 1)</summary>
   <pre>
-    Now is the winter of our discontent
-    Made glorious summer by this sun of York;
-    And all the clouds that lour’d upon our house
-    In the deep bosom of the ocean buried.
-    Now are our brows bound with victorious wreaths;
-    Our bruised arms hung up for monuments;
-    Our stern alarums changed to merry meetings,
-    Our dreadful marches to delightful measures.
-    Grim-visaged war hath smooth’d his wrinkled front;
-    And now, instead of mounting barded steeds
-    To fright the souls of fearful adversaries,
-    He capers nimbly in a lady’s chamber
-    To the lascivious pleasing of a lute.
-    But I, that am not shaped for sportive tricks,
-    Nor made to court an amorous looking-glass;
-    I, that am rudely stamp’d, and want love’s majesty
-    To strut before a wanton ambling nymph;
-    I, that am curtail’d of this fair proportion,
-    Cheated of feature by dissembling nature,
-    Deformed, unfinish’d, sent before my time
-    Into this breathing world, scarce half made up,
-    And that so lamely and unfashionable
-    That dogs bark at me as I halt by them;
-    Why, I, in this weak piping time of peace,
-    Have no delight to pass away the time,
-    Unless to spy my shadow in the sun
-    And descant on mine own deformity:
-    And therefore, since I cannot prove a lover,
-    To entertain these fair well-spoken days,
-    I am determined to prove a villain
-    And hate the idle pleasures of these days.
-    Plots have I laid, inductions dangerous,
-    By drunken prophecies, libels and dreams,
-    To set my brother Clarence and the king
-    In deadly hate the one against the other:
-    And if King Edward be as true and just
-    As I am subtle, false and treacherous,
-    This day should Clarence closely be mew’d up,
-    About a prophecy, which says that ‘G’
-    Of Edward’s heirs the murderer shall be.
-    Dive, thoughts, down to my soul:
+  Now is the winter of our discontent
+  Made glorious summer by this sun of York;
+  And all the clouds that lour’d upon our house
+  In the deep bosom of the ocean buried.
+  Now are our brows bound with victorious wreaths;
+  Our bruised arms hung up for monuments;
+  Our stern alarums changed to merry meetings,
+  Our dreadful marches to delightful measures.
+  Grim-visaged war hath smooth’d his wrinkled front;
+  And now, instead of mounting barded steeds
+  To fright the souls of fearful adversaries,
+  He capers nimbly in a lady’s chamber
+  To the lascivious pleasing of a lute.
+  But I, that am not shaped for sportive tricks,
+  Nor made to court an amorous looking-glass;
+  I, that am rudely stamp’d, and want love’s majesty
+  To strut before a wanton ambling nymph;
+  I, that am curtail’d of this fair proportion,
+  Cheated of feature by dissembling nature,
+  Deformed, unfinish’d, sent before my time
+  Into this breathing world, scarce half made up,
+  And that so lamely and unfashionable
+  That dogs bark at me as I halt by them;
+  Why, I, in this weak piping time of peace,
+  Have no delight to pass away the time,
+  Unless to spy my shadow in the sun
+  And descant on mine own deformity:
+  And therefore, since I cannot prove a lover,
+  To entertain these fair well-spoken days,
+  I am determined to prove a villain
+  And hate the idle pleasures of these days.
+  Plots have I laid, inductions dangerous,
+  By drunken prophecies, libels and dreams,
+  To set my brother Clarence and the king
+  In deadly hate the one against the other:
+  And if King Edward be as true and just
+  As I am subtle, false and treacherous,
+  This day should Clarence closely be mew’d up,
+  About a prophecy, which says that ‘G’
+  Of Edward’s heirs the murderer shall be.
+  Dive, thoughts, down to my soul:
   </pre>
 </details>
 
