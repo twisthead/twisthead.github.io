@@ -2,7 +2,8 @@
 layout: default
 title: Najm Us Saqib's Page
 ---
-    <div class="center">
+<div class="center home-bg">
+ 
       <p class="word">
         <span class="letter" style="font-family: beast-face;font-size: 9vw;">N</span>
         <span class="letter" style="font-family: beast-face;font-size: 9vw;">A</span>
@@ -21,16 +22,18 @@ title: Najm Us Saqib's Page
 
       </p>
 
-      <!-- <p class="name">Najm Us Saqib</p> -->
-      <p>Hi! You've reached the personal website of Najm Us Saqib.</p>
-      <p>This is a little place of my own on the internet. I write something about me and the stuff that I do.</p>
-      <p>I study literature.</p>
-    </div>
 
 <br>
-<h3 class="center stand-with-palestine">🇵🇸 STAND WITH PALESTINE!</h3>
+<h3 class="stand-with-palestine">🇵🇸 STAND WITH PALESTINE!</h3>
 <br>
-<div class="navbut">
+</div>
+
+
+<div class="center">
+  <p>Hi! You've reached the personal website of Najm Us Saqib.</p>
+  <p>This is a little place of my own on the internet. I write something about me and the stuff that I do.</p>
+  <p>I study literature.</p>
+
   <p>
     [<a href="{% link pages/bio.md %}">Bio</a>]
     [<a href="{% link blog/index.html %}">Writeups</a>]
@@ -50,8 +53,13 @@ title: Najm Us Saqib's Page
    {% endfor %}</p>
  </div>
  <br>
- <span style="font-size:30px; color: #FFC2B4;">&#9733;&#9733;&#9733;</span><br>
-  <div style="margin-top: 10px;">
+ <img src="https://web.archive.org/web/20091027091138/http://geocities.com/kokosar2000/palestine1.gif" alt="" class="center-image">
+
+ <span style="font-size:30px; color: #FFC2B4;">&#9733;&#9733;&#9733;</span>
+ 
+ <br>
+ 
+ <div style="margin-top: 10px;">
     <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-35315-97" target="_blank"><img src="assets/guestbook.png" alt="Sign My Guestbook"></a>
   </div>
 
@@ -59,5 +67,7 @@ title: Najm Us Saqib's Page
 {% include feed.html %}
   </div>
 </div>
-<!-- <hr style="width: 80px;"> -->
+  
+
 <p style="text-align:center;margin:0px 80px">Last Updated: {{ "now" | date: "%Y-%m-%d" }}</p>
+<br>

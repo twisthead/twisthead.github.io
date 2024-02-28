@@ -22,6 +22,8 @@ $link-shadow-color: #9DBEB9;
 body {
     background-color: $bgcolor;
     font-family: $pfont;
+    margin: 0;
+    padding: 0;
 }
 
 p,
@@ -91,10 +93,6 @@ details[open] > pre {
     font-size: 9vw;
     margin: 20px;
     line-height: 1;
-}
-
-.navbut {
-    text-align: center;
 }
 
 .intro {
@@ -278,3 +276,20 @@ a>p {
     font-family: 'Noto Nastaliq Urdu', serif;
 }
 
+// --------HOME BACKGROUND STYLES ------------
+.home-bg {
+    background-image: url(/assets/images/animebg2.jpg);
+    background-position:bottom;
+    background-size: cover;
+}
+.word {
+    margin-top: 0;
+    padding: 100px;
+    color: $pcolor;
+}
+
+// FLOAT RIGHT IMAGE
+.float-right-image {
+    float: right;
+    padding: 0 10px;
+}

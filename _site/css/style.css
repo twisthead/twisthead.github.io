@@ -305,6 +305,8 @@
 body {
   background-color: #194350;
   font-family: "Space Mono", "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
 }
 
 p,
@@ -375,10 +377,6 @@ details[open] > pre {
   font-size: 9vw;
   margin: 20px;
   line-height: 1;
-}
-
-.navbut {
-  text-align: center;
 }
 
 .intro {
@@ -551,6 +549,23 @@ a > p {
 
 .sher {
   font-family: "Noto Nastaliq Urdu", serif;
+}
+
+.home-bg {
+  background-image: url(/assets/images/animebg2.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.word {
+  margin-top: 0;
+  padding: 100px;
+  color: #FFC2B4;
+}
+
+.float-right-image {
+  float: right;
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
