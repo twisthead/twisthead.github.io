@@ -2,6 +2,7 @@
 ---
 @import "moonkai";
 @import "name-animation";
+@import "rain";
 
 $bgcolor: #194350;
 $pfont: 'Space Mono', 'Courier New', Courier, monospace;
@@ -18,15 +19,14 @@ $link-shadow-color: #9DBEB9;
     font-style: normal;
     font-display: swap;
 }
-html {
-    height: 100%;
-}
-body {
+
+html, body {
     background-color: $bgcolor;
     font-family: $pfont;
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 p,
