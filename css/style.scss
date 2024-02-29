@@ -64,8 +64,6 @@ div {
     color: $linkcolor;
 }
 
-// text-shadow: 2px 2px 8px $link-shadow-color;
-
 a:hover {
     color: $bgcolor;
     background-color: $linkcolor;
@@ -128,12 +126,18 @@ details[open] > pre {
     #centerpara {
         padding: 30px;
     }
+    .letter {
+        font-size: 12vh;
+    }
 }
 
 /* For mobile or small screens */
 @media (max-width: 768px) {
     #centerpara {
         padding: 10px;
+    }
+    .letter {
+        font-size: 15vw;
     }
 }
 

@@ -226,7 +226,9 @@
 .letter {
   display: inline-block;
   opacity: 0;
-  margin-left: -15px;
+  margin-left: -10px;
+  font-family: beast-face;
+  font-size: 9vw;
 }
 
 .letter:nth-child(1) {
@@ -415,11 +417,17 @@ details[open] > pre {
   #centerpara {
     padding: 30px;
   }
+  .letter {
+    font-size: 12vh;
+  }
 }
 /* For mobile or small screens */
 @media (max-width: 768px) {
   #centerpara {
     padding: 10px;
+  }
+  .letter {
+    font-size: 15vw;
   }
 }
 .topnav {
