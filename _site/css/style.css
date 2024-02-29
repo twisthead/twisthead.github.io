@@ -302,11 +302,16 @@
   font-style: normal;
   font-display: swap;
 }
+html {
+  height: 100%;
+}
+
 body {
   background-color: #194350;
   font-family: "Space Mono", "Courier New", Courier, monospace;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 p,
@@ -555,12 +560,19 @@ a > p {
   background-image: url(/assets/images/animebg2.jpg);
   background-position: bottom;
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .word {
-  margin-top: 0;
-  padding: 100px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
   color: #FFC2B4;
+  flex-direction: row;
 }
 
 .float-right-image {

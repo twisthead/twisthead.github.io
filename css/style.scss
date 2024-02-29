@@ -18,12 +18,15 @@ $link-shadow-color: #9DBEB9;
     font-style: normal;
     font-display: swap;
 }
-
+html {
+    height: 100%;
+}
 body {
     background-color: $bgcolor;
     font-family: $pfont;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 p,
@@ -281,11 +284,18 @@ a>p {
     background-image: url(/assets/images/animebg2.jpg);
     background-position:bottom;
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 .word {
-    margin-top: 0;
-    padding: 100px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     color: $pcolor;
+    flex-direction: row;
 }
 
 // FLOAT RIGHT IMAGE
