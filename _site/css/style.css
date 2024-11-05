@@ -620,4 +620,11 @@ a > p {
   padding: 0 10px;
 }
 
+.home-stickers {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */

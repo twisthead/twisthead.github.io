@@ -11,33 +11,8 @@ When I think about what I should write in the bio section, my mind goes blank. B
 
 I want to have a career related to books, literature, reading, writing and all because I think I can do things like this with more ease and enjoy doing it. Since my family has a tradition of choosing the teaching as a profession like my grandfather, father and lots of other people in my family. So, I don't mind having teaching as a career. But  I would obviously prefer academia more because it involves critical thinking and research skills, which I have recently been more attracted to. 
 
+<a href="{% link pages/content/interests.md %}">More on my interests</a>  
 Here's my [CV](https://twisthead.github.io/curriculum-vitae/)
-
-**<u>Areas of Interests</u>**
-
-1. Literature  
-    1. Literary Theory  
-        1. Postcolonialism  
-        2. Marxist Theory  
-        3. Psychoanalytic Theory  
-        4. Cultural Studies  
-    2. Novels
-        1. 19th & 20th Century Novels <[Opinion]({% link pages/content/opinions.html %})>
-    3. Poetry
-        1. Romantic to Modern Poetry
-        2. Robert Browning (Special Place)
-2. Technology
-    1. Web Designing
-    2. Open-Source Enthusiast
-    3. Ardent Linux User
-3. Cinema
-    1. Movies with a message
-    2. High Cinema (derived from High Culture)
-    3. Marginalised Cinema
-4. Music
-    1. Alternative Rock
-    2. 10's Bollywood
-    3. Novo Amor
 
 
 ---
