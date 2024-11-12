@@ -14,10 +14,10 @@ _I like Urdu Shayari alot, so here I will share some of my favourite pieces of U
 by <a href="https://sufinama.org/kalaam/un-ke-andaaz-e-karam-un-pe-vo-aanaa-dil-kaa-pir-naseeruddin-naseer-kalaam-18">Pir Naseeruddin Naseer</a>
 <p class="sher">
 یہ کاغزی پھول جیسے چہرے مزاق اڑاتے ہیں آدمی کا <br>
-انہیں کوئی کاش یہ بتا دے مقام انچا ہے آدمی کا <br>
+انہیں کوئی کاش یہ بتا دے مقام انچا ہے سادگی کا <br>
 
  </p>
-<span class="urdu"> فیاز ھاشمی</span>
+<span class="urdu"> فیاز ہاشمی</span>
  
 </div>
 
