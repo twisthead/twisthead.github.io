@@ -290,7 +290,7 @@ a>p {
 // --------HOME BACKGROUND STYLES ------------
 .home-bg {
     background-image: url(/assets/images/animebg2.jpg);
-    background-position:bottom;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -317,4 +317,5 @@ a>p {
   align-content: center;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
