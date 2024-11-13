@@ -9,7 +9,7 @@ title: Eternal Sunshine of Spotless Mind
 </figure>
 The lockdown period brought free time for us in abundance and I ustilised that time doing all sorts of things. And one things that did the most was to watch movies. It was at that time that I watched _Eternal Sunshine of Spotless Mind_.
 
-The movies features Jim Carrey and Kate Winslet. The movie is categorized as science fiction but I see more as a romantic drama type. You can read more about this movie or whatch it to know what happens in the movie. I'm going to express what this movie taught me.
+The movies features Jim Carrey and Kate Winslet. The movie is categorized as science fiction but I see more as a romantic drama type. You can read more about this movie or watch it to know what happens in the movie. I'm going to express what this movie taught me.
 
 I've watched this movie multiple times as it doesn't come to you in full in a single watch. There are a lot in the movie to have a grasp on. It is fundamentally different from other romantic movies out there. It was released in 2004 when the technology was quite new.
 
