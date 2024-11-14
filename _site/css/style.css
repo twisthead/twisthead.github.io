@@ -434,29 +434,16 @@ details[open] > pre {
   padding: 0.5em;
 }
 
+.pagelinks {
+  display: inline-block;
+  padding: 2.5px;
+}
+
 /* Default padding for large screens */
 #centerpara {
   padding: 1% 25%;
 }
 
-/* For tablets or medium-sized screens */
-@media (max-width: 992px) {
-  #centerpara {
-    padding: 30px;
-  }
-  .letter {
-    font-size: 12vh;
-  }
-}
-/* For mobile or small screens */
-@media (max-width: 768px) {
-  #centerpara {
-    padding: 10px;
-  }
-  .letter {
-    font-size: 15vw;
-  }
-}
 .topnav {
   overflow: hidden;
   text-align: center;
@@ -615,9 +602,14 @@ a > p {
   flex-direction: row;
 }
 
-.float-right-image {
-  float: right;
-  padding: 0 10px;
+.home-flex {
+  display: flex;
+  margin: 25px;
+}
+
+.home-flex-child {
+  width: 50%;
+  padding: 10px;
 }
 
 .home-stickers {
@@ -626,6 +618,37 @@ a > p {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  flex-wrap: wrap;
+}
+
+.float-right-image {
+  float: right;
+  padding: 0 10px;
+}
+
+/* For tablets or medium-sized screens */
+@media (max-width: 992px) {
+  #centerpara {
+    padding: 30px;
+  }
+  .letter {
+    font-size: 12vh;
+  }
+}
+/* For mobile or small screens */
+@media (max-width: 768px) {
+  #centerpara {
+    padding: 10px;
+  }
+  .letter {
+    font-size: 15vw;
+  }
+  .home-flex {
+    flex-direction: column;
+  }
+  .home-flex-child {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

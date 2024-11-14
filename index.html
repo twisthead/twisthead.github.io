@@ -38,7 +38,9 @@ title: Najm Us Saqib's Page
   <p>This is a little place of my own on the internet. I write something about me and the stuff that I do.</p>
   <p>I study literature.</p>
 
-  <p>
+  <div class="home-flex">
+<div class="home-flex-child">
+    <p>
     [<a href="{% link pages/bio.md %}">Bio</a>]
     [<a href="{% link blog/index.html %}">Writeups</a>]
     [<a href="{% link pages/books.md %}">Books</a>]
@@ -49,33 +51,50 @@ title: Najm Us Saqib's Page
  <p>
   My Blogs : [<a href="https://crapauthor.wordpress.com" target="_blank">Blog</a>] | [<a href="https://lifeisalovepoem.blogspot.com/" target="_blank">Poetry</a>]</p>
 
- <div class="pagelinks">
-   <p>{% for page in site.pages %}
-    {% if page.path contains 'pages/content' %}
-      <span>[<a href="{{ page.url }}">{{ page.title }}</a>]</span>
-     {% endif %}
-   {% endfor %}</p>
+ <div>
+   <p>
+
+    {% for page in site.pages %}
+    
+        {% if page.path contains 'pages/content' %}
+      
+      <div class="pagelinks">[<a href="{{ page.url }}">{{ page.title }}</a>]</div>
+      {% endif %}
+  {% endfor %}
+
+  </p>
  </div>
- <br>
-<div class="home-stickers">
-<img src="/assets/gifs/palestine1.gif" alt="FREE PALESTINE" height="30px">
-<img src="/assets/gifs/bufreepalestine.gif">
-<img src="/assets/gifs/standwith.png">
-</div>
+    
+  <span style="font-size:30px; color: #FFC2B4;">&#9733;&#9733;&#9733;</span>
 
- <span style="font-size:30px; color: #FFC2B4;">&#9733;&#9733;&#9733;</span>
 
- <br>
-
- <div style="margin-top: 10px;">
+  <div style="margin-top: 10px;">
     <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-35315-97" target="_blank"><img src="assets/guestbook.png" alt="Sign My Guestbook"></a>
   </div>
 
+    
+    {% include feed.html %}
 
-{% include feed.html %}
-  </div>
+  </div>  
+
+
+  <div class="home-flex-child">
+      <img src="assets/gifs/che.jpg" alt="che">&nbsp;
+      <img src="assets/gifs/peneyes.gif" alt="tux"><br>
+    <img src="/assets/gifs/giphy.webp" alt="palestine" height="150px">
+
+    <div class="home-stickers">
+      <img src="/assets/gifs/bufreepalestine.gif">
+      <img src="/assets/gifs/standwith.png">
+      <img src="/assets/gifs/LinuxNow.gif" alt="Linux">
+      </div>
+  </div>  
 </div>
+<img src="assets/gifs/hedwig.gif" alt="" class="center">
 
+  </div>
+
+</div>
 
 <p style="text-align:center;margin:0px 80px">Last Updated: {{ "now" | date: "%Y-%m-%d" }}</p>
 <br>
