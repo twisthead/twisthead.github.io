@@ -58,7 +58,7 @@ title: Najm Us Saqib's Page
     
         {% if page.path contains 'pages/content' %}
       
-      <div class="pagelinks">[<a href="{{ page.url }}">{{ page.title }}</a>]</div>
+      <p class="pagelinks">[<a href="{{ page.url }}">{{ page.title }}</a>]</p>
       {% endif %}
   {% endfor %}
 
@@ -69,12 +69,13 @@ title: Najm Us Saqib's Page
 
 
   <div style="margin-top: 10px;">
-    <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-35315-97" target="_blank"><img src="assets/guestbook.png" alt="Sign My Guestbook"></a>
+    <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-35315-97" target="_blank"><img src="assets/guestbook.png" alt="Sign My Guestbook"></a> &nbsp;
+    
+    <a href="{% link feed.xml %}"><img src="/assets/graphics/rss.jpg" alt="Feed" width="90px"></a>
+
   </div>
 
-    
-    {% include feed.html %}
-
+  
   </div>  
 
 
