@@ -346,14 +346,17 @@ html, body {
 p,
 i,
 b,
-li,
+li {
+  color: #FFC2B4;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #FFC2B4;
+  color: #FF8882;
 }
 
 section {
@@ -545,6 +548,7 @@ a > p {
 .post-rss-flex {
   display: flex;
   justify-content: space-between;
+  gap: 25px;
 }
 
 .post-rss-flex > h2 {
@@ -632,6 +636,56 @@ a > p {
 .float-right-image {
   float: right;
   padding: 0 10px;
+}
+
+.mastodon-feed {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.toot {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: white;
+}
+
+.toot-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.toot-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.toot-author {
+  font-weight: bold;
+}
+
+.toot-meta {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.toot-content {
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.toot-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 8px;
+  align-items: center;
 }
 
 /* For tablets or medium-sized screens */

@@ -12,7 +12,7 @@ title: Interests
         3. Psychoanalytic Theory  
         4. Cultural Studies  
     2. Novels
-        1. 19th & 20th Century Novels <[Opinion]({% link pages/content/opinions.html %})>
+        1. 19th & 20th Century Novels <[Opinion]({% link pages/content/opinions.md %})>
     3. Poetry
         1. Romantic to Modern Poetry
         2. Robert Browning (Special Place)
