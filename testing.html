@@ -1,16 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Facts</title>
+<!-- Add this CSS to style your counter -->
+<style>
+.visitor-counter {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.counter-label {
+    color: #495057;
+    font-size: 1rem;
+}
+
+.counter-number {
+    color: #0066cc;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+</style>
 </head>
 <body>
-    <h1>Random Facts</h1>
-    <div id="factDisplay">Loading fact...</div>
+<!-- Add this HTML where you want the counter to appear -->
+<div class="visitor-counter">
+    <span class="counter-label">Total Visitors:</span>
+    <span id="visit-count" class="counter-number">0</span>
+</div>
 
-    <script>
 
-    </script>
+
+<!-- Add this JavaScript to implement the counter -->
+<script>
+// Function to format numbers with commas
+function formatNumber(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+// Function to get and update visitor count
+function updateVisitorCount() {
+    // Replace 'your-website-name' with a unique identifier for your site
+    const namespace = 'your-website-name';
+    const key = 'visits';
+    
+    fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+        .then(response => response.json())
+        .then(data => {
+            const countElement = document.getElementById('visit-count');
+            countElement.textContent = formatNumber(data.value);
+        })
+        .catch(error => {
+            console.error('Error fetching visitor count:', error);
+            document.getElementById('visit-count').textContent = 'Error loading count';
+        });
+}
+
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', updateVisitorCount);
+</script>
 </body>
 </html>
+
