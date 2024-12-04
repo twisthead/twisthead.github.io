@@ -4,6 +4,8 @@ title: 'Meal Ticket from The Ballad of Buster Scruggs'
 ---
 <h2 class="center">{{ page.title }}</h2>
 
+<img src="https://i.postimg.cc/90g14SdR/image.png" width="75%" class="center-image">
+
 I was watching a movie called _The Ballad of Buster Scruggs_, I had previously seen several scenes of this movie on YouTube. Those were some selected iconic scenes from the movie. And those were really, really good that's what compelled me to watch the movie in the first place.
   
 So, the movie is directed by the [Coen brothers](https://en.wikipedia.org/wiki/Coen_brothers), it is set in the wild west. The movie is different because it is not a single story throughout a movie, rather it is a collection of six [vignettes](https://literarydevices.net/vignette/). The vignettes were usual stories from the west where shootings, hangings, robberies were going on until I reached the third vignette which was quite different from the first two and even the upcoming ones. This really did catch my eye and slipped under my skin and stayed with me for several times. It was hard to let go. 
@@ -13,6 +15,8 @@ I'll quickly write the summary here, and then I'll move on with my analysis.
 The third vignette starts with a man driving his cart into a small town, once there the man puts up an announcement of some sorts saying that some performance is going to be organised that night. At night, the man converts his cart into a makeshift stage, when the curtains are lifted we see a man with no hands and legs on a chair. The man is a performer, and he recites literary piece from Shelley, Shakespeare, Biblical stories and Abraham Lincoln's speech. He is quite impressive and there are good number of audience enjoying the show. He ends his performance with impactful lines, and the man who drives the cart collects money from the audience. 
 
 The sequence goes on, the performer and the impresario travel to various towns and perform however, as they move to smaller towns, people show less enthusiasm for such literature and dramatic monologues. Time comes when there are only two or three audiences and they also do not give any money. The impresario sees a mob of people watching a chicken solving a simple addition, subtraction calculation by tapping on the numbers. People are enthusiastically take part in this and also pay the chicken man for the chicken to solve their calculations. 
+
+<img src="https://i.postimg.cc/j5shMKvn/image.png" width="75%" class="center-image">
 
 The Impresario buys the chicken from the man, thinking that he could earn a lot more with the chicken than the performer. The performer is sad seeing the chicken. They begin their travel to some other town, on the way the impresario crosses a river and an idea strikes his mind. He throws a rock in the river to judge the depth of the river and then comes smiling at the performer who is sitting in the wagon.
 

@@ -49,6 +49,24 @@
 <hr />
 <p>Since I like writing a lot and I love to make wepages as well, so I though maybe I should collaborate with me and make a website where I would post my daily journals if I could. So, I made one. <a href="https://twisthead.github.io/daily-journal/">Check Out</a></p>
 
+<h3 id="my-javascript-journey">My JavaScript Journey</h3>
+<hr />
+<p>I am learning JavaScript. Here’s how much progress I’ve made.</p>
+
+<p><input type="text" id="name" placeholder="Type Your Name" />
+  <button onclick="inc()">Say Hello!</button></p>
+
+<h2 id="text">...</h2>
+
+<script>
+    function inc() {
+    const userinput = document.getElementById("name").value;
+      const paragraph = document.getElementById("text");
+      paragraph.textContent = "Hello" + " " + userinput+"!"
+  }
+  </script>
+
+
 
 </div>
 
@@ -56,7 +74,7 @@
 <script src="/static/script.js"></script>
 
 <script src="/static/fact.js"></script>
-
+<script src="https://unpkg.com/lunr/lunr.js"></script>
 
   </body>
 

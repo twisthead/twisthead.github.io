@@ -96,3 +96,4 @@ async function initMastodonFeed(instance, username) {
 document.addEventListener('DOMContentLoaded', function() {
     initMastodonFeed("mastodon.social", "twistedhead");
 });
+

@@ -20,3 +20,20 @@ Made a single-page website which is basically my CV. Was just doing for fun, lea
 ### My Daily Journal
 ---
 Since I like writing a lot and I love to make wepages as well, so I though maybe I should collaborate with me and make a website where I would post my daily journals if I could. So, I made one. [Check Out](https://twisthead.github.io/daily-journal/)  
+
+### My JavaScript Journey
+---
+I am learning JavaScript. Here's how much progress I've made. 
+
+<input type="text" id="name" placeholder="Type Your Name">
+  <button onclick="inc()">Say Hello!</button>
+
+<h2 id="text">...</h2>
+
+<script>
+    function inc() {
+    const userinput = document.getElementById("name").value;
+      const paragraph = document.getElementById("text");
+      paragraph.textContent = "Hello" + " " + userinput+"!"
+  }
+  </script>
