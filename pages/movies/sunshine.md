@@ -3,10 +3,12 @@ layout: page
 title: Eternal Sunshine of Spotless Mind
 ---
 <h2 class="center">{{ page.title }}</h2>
+
 <figure>
   <img src="https://venkatarangan.com/blog/wp-content/uploads/2019/12/eternal-sunshine-2004.jpg" class="center-image" width="300px">
   <figcaption class="center">Poster of Eternal Sunshine of Spotless Mind</figcaption>
 </figure>
+
 The lockdown period brought free time for us in abundance and I ustilised that time doing all sorts of things. And one things that did the most was to watch movies. It was at that time that I watched _Eternal Sunshine of Spotless Mind_.
 
 The movies features Jim Carrey and Kate Winslet. The movie is categorized as science fiction but I see more as a romantic drama type. You can read more about this movie or watch it to know what happens in the movie. I'm going to express what this movie taught me.

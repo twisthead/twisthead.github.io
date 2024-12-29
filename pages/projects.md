@@ -26,11 +26,22 @@ Since I like writing a lot and I love to make wepages as well, so I though maybe
 I am learning JavaScript. Here's how much progress I've made. 
 
 <input type="text" id="name" placeholder="Type Your Name">
-  <button onclick="inc()">Say Hello!</button>
+  <button onclick="inc()" id="btn">Say Hello!</button>
 
 <h2 id="text">...</h2>
 
 <script>
+
+  document.getElementById('name').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        // Prevent the default action (if needed)
+        event.preventDefault();
+        
+        // Trigger the button click
+        document.getElementById('btn').click();
+    }
+});
+
     function inc() {
     const userinput = document.getElementById("name").value;
       const paragraph = document.getElementById("text");

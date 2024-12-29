@@ -16,20 +16,19 @@ _**These are in no particular order and are specifically chosen on my personal t
 3.  Hamlet by William Shakespeare
 4.  Thousand Splendid Suns by Khaled Hosseini
 5.  The Mayor of Casterbridge by Thomas Hardy
-
+6. Farewell to Arms by Earnest Hemingway
 
 **// My Latest Reads//**
+
 <ol>
-{% for book in site.data.books limit:5 %}
-
-<li>{{ book.author }} - {{ book.title }}</li>
-
-{% endfor %}
+  {% for book in site.data.books limit:3 %}
+    <li>{{ book.title }} by {{ book.author }}</li>
+  {% endfor %}
 </ol>
 
 **// Books I have read //**
 
-[**Complete List**]({% link pages/books-read.md %})  
+[**Complete List**](https://www.goodreads.com/review/list/100734663-nazm-us-saqib?shelf=read)  
 
 ---
 

@@ -8,6 +8,7 @@ _In this section I will discussing something about movies. Commentaries, critica
 
 - [Into the Wild]({% link pages/movies/into-the-wild.md %})
 - [Eternal Sunshine of Spotless Mind]({% link pages/movies/sunshine.md %})
+- [Detachment]({% link pages/movies/detachment.md %})
 
 ---
 

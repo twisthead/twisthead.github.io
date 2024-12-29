@@ -27,6 +27,7 @@
   [<a href="/books">Books</a>]
   [<a href="/projects">Projects</a>]
   [<a href="/contact">Contact</a>]
+  [<a href="/pages/search.html">Search</a>]
 </p>
 
 <div class="intro" id="centerpara">
@@ -54,11 +55,22 @@
 <p>I am learning JavaScript. Here’s how much progress I’ve made.</p>
 
 <p><input type="text" id="name" placeholder="Type Your Name" />
-  <button onclick="inc()">Say Hello!</button></p>
+  <button onclick="inc()" id="btn">Say Hello!</button></p>
 
 <h2 id="text">...</h2>
 
 <script>
+
+  document.getElementById('name').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        // Prevent the default action (if needed)
+        event.preventDefault();
+        
+        // Trigger the button click
+        document.getElementById('btn').click();
+    }
+});
+
     function inc() {
     const userinput = document.getElementById("name").value;
       const paragraph = document.getElementById("text");
