@@ -5,12 +5,60 @@
 @import "rain";
 @import "search";
 
-$bgcolor: #194350;
+$bgcolor: var(--bg-color);
 $pfont: 'Space Mono', 'Courier New', Courier, monospace;
-$pcolor: #FFC2B4;
-$linkcolor: #FF8882;
+$pcolor: var(--text-color);
+$linkcolor: var(--link-color);
 $link-shadow-color: #9DBEB9;
 
+:root[data-theme="default"] {
+  --bg-color: #194350;
+  --text-color: #FFC2B4;
+  --link-color: #FF8882;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #bb86fc;
+}
+
+:root[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #121212;
+  --link-color: #006699;
+}
+
+:root[data-theme="sepia"] {
+  --bg-color: #f4ecd8;
+  --text-color: #5b4636;
+  --link-color: #986801;
+}
+
+:root[data-theme="solarized-light"] {
+  --bg-color: #fdf6e3;
+  --text-color: #657b83;
+  --link-color: #268bd2;
+}
+
+:root[data-theme="cyberpunk"] {
+    --bg-color: #f72585;
+    --text-color: #60225d;
+    --link-color: #f6e837;
+}
+
+.theme-switcher {
+  margin: 1.3em 0;
+  text-align: center;
+}
+
+#themeSelect {
+  padding: 0.5em;
+  border-radius: 4px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
 
 @font-face {
     font-family: 'beast-face';

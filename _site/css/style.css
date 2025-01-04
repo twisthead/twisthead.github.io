@@ -327,6 +327,55 @@
     transform: translateY(200vh) translateX(20vw); /* Ending position */
   }
 }
+:root[data-theme=default] {
+  --bg-color: #194350;
+  --text-color: #FFC2B4;
+  --link-color: #FF8882;
+}
+
+:root[data-theme=dark] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #bb86fc;
+}
+
+:root[data-theme=light] {
+  --bg-color: #ffffff;
+  --text-color: #121212;
+  --link-color: #006699;
+}
+
+:root[data-theme=sepia] {
+  --bg-color: #f4ecd8;
+  --text-color: #5b4636;
+  --link-color: #986801;
+}
+
+:root[data-theme=solarized-light] {
+  --bg-color: #fdf6e3;
+  --text-color: #657b83;
+  --link-color: #268bd2;
+}
+
+:root[data-theme=cyberpunk] {
+  --bg-color: #f72585;
+  --text-color: #60225d;
+  --link-color: #f6e837;
+}
+
+.theme-switcher {
+  margin: 1.3em 0;
+  text-align: center;
+}
+
+#themeSelect {
+  padding: 0.5em;
+  border-radius: 4px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
 @font-face {
   font-family: "beast-face";
   src: url("/assets/fonts/beast-head.woff2") format("woff2"), url("/assets/fonts/beast-head.woff") format("woff");
@@ -335,7 +384,7 @@
   font-display: swap;
 }
 html, body {
-  background-color: #194350;
+  background-color: var(--bg-color);
   font-family: "Space Mono", "Courier New", Courier, monospace;
   margin: 0;
   padding: 0;
@@ -347,7 +396,7 @@ p,
 i,
 b,
 li {
-  color: #FFC2B4;
+  color: var(--text-color);
 }
 
 h1,
@@ -356,16 +405,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: #FF8882;
+  color: var(--link-color);
 }
 
 section {
-  color: #FFC2B4;
+  color: var(--text-color);
 }
 
 .post-content {
-  border-top: 1.5px dotted #FF8882;
-  border-bottom: 1.5px dotted #FF8882;
+  border-top: 1.5px dotted var(--link-color);
+  border-bottom: 1.5px dotted var(--link-color);
   margin: 1.5em 0 0 0;
   padding: 0.5em 0 1.5em 0;
 }
@@ -378,12 +427,12 @@ section {
 a,
 a > p,
 div {
-  color: #FF8882;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #194350;
-  background-color: #FF8882;
+  color: var(--bg-color);
+  background-color: var(--link-color);
 }
 
 hr {
@@ -397,7 +446,7 @@ details {
 }
 details pre {
   font-size: 1em;
-  color: #FFC2B4;
+  color: var(--text-color);
   font-family: "Space Mono", "Courier New", Courier, monospace;
   overflow: scroll;
 }
@@ -430,8 +479,8 @@ details[open] > pre {
 }
 
 .stand-with-palestine {
-  background-color: #FFC2B4;
-  color: #194350;
+  background-color: var(--text-color);
+  color: var(--bg-color);
   width: fit-content;
   margin: 0 auto;
   padding: 0.5em;
@@ -578,14 +627,14 @@ a > p {
 
 .previous:hover,
 .next:hover {
-  background-color: #194350;
-  color: #FF8882;
+  background-color: var(--bg-color);
+  color: var(--link-color);
   text-shadow: 2px 2px 8px #9DBEB9;
 }
 
 .sher {
   font-family: "Noto Nastaliq Urdu", serif;
-  border-top: 1px dotted #FFC2B4;
+  border-top: 1px dotted var(--text-color);
 }
 
 .urdu {
@@ -607,7 +656,7 @@ a > p {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  color: #FFC2B4;
+  color: var(--text-color);
   flex-direction: row;
 }
 
@@ -698,7 +747,7 @@ a > p {
   margin: 0 auto;
 }
 .searchbox h1 {
-  color: #FFC2B4;
+  color: var(--text-color);
 }
 
 #search-input {
@@ -706,10 +755,10 @@ a > p {
   padding: 10px;
   font-family: "Space Mono", "Courier New", Courier, monospace;
   font-size: 1em;
-  border: 1px solid #FF8882;
+  border: 1px solid var(--link-color);
   border-radius: 5px;
-  background-color: #194350;
-  color: #FFC2B4;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
@@ -724,13 +773,13 @@ a > p {
   animation: slideIn 0.5s ease-in-out;
 }
 #search-results div a {
-  color: #FF8882;
+  color: var(--link-color);
   text-decoration: none;
   font-size: 1.1em;
 }
 #search-results div a:hover {
-  color: #194350;
-  background-color: #FF8882;
+  color: var(--bg-color);
+  background-color: var(--link-color);
 }
 
 @keyframes fadeIn {

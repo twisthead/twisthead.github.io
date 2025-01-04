@@ -97,3 +97,20 @@ document.addEventListener('DOMContentLoaded', function() {
     initMastodonFeed("mastodon.social", "twistedhead");
 });
 
+// ------------------THEME SELECTOR SCRIPT --------------------
+
+document.addEventListener('DOMContentLoaded', () => {
+  const themeSelect = document.getElementById('themeSelect');
+  
+  // Load saved theme
+  const savedTheme = localStorage.getItem('theme') || 'default';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  themeSelect.value = savedTheme;
+  
+  // Handle theme changes
+  themeSelect.addEventListener('change', (e) => {
+    const theme = e.target.value;
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  });
+});
