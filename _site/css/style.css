@@ -358,9 +358,9 @@
 }
 
 :root[data-theme=cyberpunk] {
-  --bg-color: #f72585;
-  --text-color: #60225d;
-  --link-color: #f6e837;
+  --bg-color: #f6e837;
+  --text-color: #a706bd;
+  --link-color: #60225d;
 }
 
 .theme-switcher {
