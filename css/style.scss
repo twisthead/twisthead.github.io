@@ -47,6 +47,16 @@ $link-shadow-color: #9DBEB9;
     --link-color: #60225d;
 }
 
+:root[data-theme="olive"] {
+    --bg-color: #123524;
+    --text-color: #EFE3C2;
+    --link-color: #85A947;
+}
+:root[data-theme="vaporwave"] {
+    --bg-color: #300350;
+    --text-color: #F9AC53;
+    --link-color: #E93479;
+}
 .theme-switcher {
   margin: 1.3em 0;
   text-align: center;
