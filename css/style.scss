@@ -1,9 +1,9 @@
 ---
 ---
-@import "moonkai";
-@import "name-animation";
-@import "rain";
-@import "search";
+@use "moonkai";
+@use "name-animation";
+@use "rain";
+@use "search";
 
 $bgcolor: var(--bg-color);
 $pfont: 'Space Mono', 'Courier New', Courier, monospace;
