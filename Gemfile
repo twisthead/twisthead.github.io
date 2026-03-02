@@ -9,6 +9,9 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "google-protobuf", "~> 4.32.1"
 
+gem "jekyll-sass-converter", "~> 2.2"
+gem "sassc"
+
 gem "jekyll", "~> 4.3.2"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
